@@ -8,6 +8,10 @@ public class Topic extends Subject{
     public Topic(String topic){     //fill constructor
         myTopic = topic;
     }
+    public Topic(String subject, String topic){
+        super(subject);
+        myTopic = topic;
+    }
 
     //set
     public void setTopic(String topic){
@@ -21,6 +25,6 @@ public class Topic extends Subject{
 
     //toString
     public String toString(){
-        return myTopic;
+        return ("Subject: " + getSubject() + " Topic: " + myTopic);
     }
 }
