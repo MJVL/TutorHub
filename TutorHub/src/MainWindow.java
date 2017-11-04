@@ -1,0 +1,30 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class MainWindow extends JFrame{
+
+    MainGUI m = new MainGUI();
+    SubjectGUI s = new SubjectGUI();
+
+    public MainWindow() {
+        setLayout(new CardLayout());
+        add(m.MainPanel);
+        m.btnStudent.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                remove(m.MainPanel);
+                add(s.MainGUI);
+                validate();
+                pack();
+                setVisible(true);
+            }
+        });
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        pack();
+        setVisible(true);
+    }
+
+
+}
