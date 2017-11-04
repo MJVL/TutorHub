@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.io.*;
 
 public class Student {
+
     private Credentials c;
     private ArrayList<Subject> arrsub = new ArrayList<Subject>();
     private int numrequested, numattended;
