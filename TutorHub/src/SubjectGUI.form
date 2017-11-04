@@ -29,8 +29,9 @@
         </constraints>
         <properties>
           <font name="Century Gothic" size="22"/>
+          <hideActionText value="false"/>
           <horizontalTextPosition value="10"/>
-          <icon value="icons/icons8-math.png"/>
+          <icon value="assets/icons/icons8-math.png"/>
           <text value="Math"/>
         </properties>
       </component>
@@ -44,7 +45,7 @@
         <properties>
           <font name="Century Gothic" size="22"/>
           <horizontalTextPosition value="10"/>
-          <icon value="icons/icons8-globe-earth.png"/>
+          <icon value="assets/icons/icons8-globe-earth.png"/>
           <text value="Social Studies"/>
         </properties>
       </component>
@@ -58,7 +59,7 @@
         <properties>
           <font name="Century Gothic" size="22"/>
           <horizontalTextPosition value="10"/>
-          <icon value="icons/icons8-language.png"/>
+          <icon value="assets/icons/icons8-language.png"/>
           <text value="Foreign Languages"/>
         </properties>
       </component>
@@ -72,7 +73,7 @@
         <properties>
           <font name="Century Gothic" size="22"/>
           <horizontalTextPosition value="10"/>
-          <icon value="icons/icons8-pencil.png"/>
+          <icon value="assets/icons/icons8-pencil.png"/>
           <text value="ACT/SAT"/>
         </properties>
       </component>
@@ -85,7 +86,7 @@
         </constraints>
         <properties>
           <font name="Century Gothic" size="22"/>
-          <icon value="icons/icons8-ellipsis.png"/>
+          <icon value="assets/icons/icons8-ellipsis.png"/>
           <text value="Other"/>
         </properties>
       </component>
@@ -98,7 +99,7 @@
         </constraints>
         <properties>
           <font name="Century Gothic" size="22"/>
-          <icon value="icons/icons8-code.png"/>
+          <icon value="assets/icons/icons8-code.png"/>
           <text value="Programming"/>
         </properties>
       </component>
@@ -111,7 +112,7 @@
         </constraints>
         <properties>
           <font name="Century Gothic" size="22"/>
-          <icon value="icons/icons8-book.png"/>
+          <icon value="assets/icons/icons8-book.png"/>
           <text value="Language Arts"/>
         </properties>
       </component>
@@ -124,7 +125,7 @@
         </constraints>
         <properties>
           <font name="Century Gothic" size="22"/>
-          <icon value="icons/icons8-dna-helix.png"/>
+          <icon value="assets/icons/icons8-dna-helix.png"/>
           <text value="Science"/>
         </properties>
       </component>

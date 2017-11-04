@@ -1,11 +1,10 @@
 import java.util.ArrayList;
 
-public class student {
+public class Student {
     private Credentials c;
     private ArrayList<Subject> arrsub = new ArrayList<Subject>();
 
-    student()
-    {
+    public Student() {
         c = new Credentials();
     }
 

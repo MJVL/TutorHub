@@ -1,11 +1,10 @@
 import java.util.ArrayList;
 
-public class tutor {
+public class Tutor {
     private Credentials c;
     private ArrayList<Subject> arrsub = new ArrayList<Subject>();
 
-    tutor()
-    {
+    public Tutor() {
         c = new Credentials();
         arrsub = new ArrayList<Subject>();
     }
@@ -18,13 +17,11 @@ public class tutor {
         return arrsub;
     }
 
-    public void setC(Credentials c)
-    {
+    public void setC(Credentials c) {
         this.c = c;
     }
 
-    public void setArrsub(ArrayList<Subject> arrsub)
-    {
+    public void setArrsub(ArrayList<Subject> arrsub) {
         this.arrsub = arrsub;
     }
 }
