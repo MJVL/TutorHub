@@ -5,8 +5,8 @@ import java.awt.event.ActionListener;
 
 public class MainWindow extends JFrame{
 
-    MainGUI m = new MainGUI();
-    SubjectGUI s = new SubjectGUI();
+    ImWindow m = new ImWindow();
+    SubjectWindow s = new SubjectWindow();
 
     public MainWindow() {
         setLayout(new CardLayout());

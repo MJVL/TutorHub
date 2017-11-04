@@ -1,13 +1,13 @@
 import javax.swing.*;
 
-public class MainGUI {
+public class ImWindow {
 
     protected JPanel MainPanel;
     protected JButton btnStudent;
     protected JButton btnTutor;
     private JLabel lblTitle;
 
-    public MainGUI() {
+    public ImWindow() {
         MainPanel.requestFocus();
     }
 

@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class SubjectGUI {
+public class SubjectWindow {
     protected JPanel MainGUI;
     private JButton btnMath;
     private JLabel lblTitle;
