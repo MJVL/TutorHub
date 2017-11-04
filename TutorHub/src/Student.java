@@ -1,27 +1,27 @@
 import java.util.ArrayList;
 
 public class student {
-    private creditials c;
-    private ArrayList<subject> arrsub = new ArrayList<subject>();
+    private Credentials c;
+    private ArrayList<Subject> arrsub = new ArrayList<Subject>();
 
     student()
     {
-        c = new creditials();
+        c = new Credentials();
     }
 
-    public creditials getC() {
+    public Credentials getC() {
         return c;
     }
 
-    public ArrayList<subject> getArrsub() {
+    public ArrayList<Subject> getArrsub() {
         return arrsub;
     }
 
-    public void setArrsub(ArrayList<subject> arrsub) {
+    public void setArrsub(ArrayList<Subject> arrsub) {
         this.arrsub = arrsub;
     }
 
-    public void setC(creditials c) {
+    public void setC(Credentials c) {
         this.c = c;
     }
 }
