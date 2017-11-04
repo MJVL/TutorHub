@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Tutor {
     private Credentials c;
     private ArrayList<Subject> arrsub = new ArrayList<Subject>();
+    private int numrequested, numattended;
 
     public Tutor() {
         c = new Credentials();
@@ -23,6 +24,26 @@ public class Tutor {
 
     public void setArrsub(ArrayList<Subject> arrsub) {
         this.arrsub = arrsub;
+    }
+
+    public int getNumrequested(){
+        return numrequested;
+    }
+
+    public int getNumattended(){
+        return numattended;
+    }
+
+    public void setNumrequested(int numrequested) {
+        this.numrequested = numrequested;
+    }
+
+    public void setNumattended(int numattended) {
+        this.numattended = numattended;
+    }
+
+    public double attendence(){
+        return (numattended/numrequested*100);
     }
 
     public String toString()
