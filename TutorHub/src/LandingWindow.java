@@ -7,4 +7,8 @@ public class LandingWindow {
     private JButton btnLogin;
     private JButton btnSignup;
     private JLabel lblTitle;
+
+    public LandingWindow() {
+        MainPanel.requestFocus();
+    }
 }
