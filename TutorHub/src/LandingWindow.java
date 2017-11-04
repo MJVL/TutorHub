@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 public class LandingWindow {
-    private JPanel MainPanel;
+    protected JPanel MainPanel;
     private JButton logInButton;
     private JButton signUpButton;
 }
