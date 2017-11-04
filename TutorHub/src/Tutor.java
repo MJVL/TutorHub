@@ -24,4 +24,14 @@ public class Tutor {
     public void setArrsub(ArrayList<Subject> arrsub) {
         this.arrsub = arrsub;
     }
+
+    public String toString()
+    {
+        String out = "";
+        out = c.toString();
+        for(int i = 0;i<arrsub.size();i++) {
+            out += arrsub.get(i).toString();
+        }
+        return out;
+    }
 }
