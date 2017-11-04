@@ -23,4 +23,14 @@ public class Student {
     public void setC(Credentials c) {
         this.c = c;
     }
+
+    public String toString()
+    {
+        String out = "";
+        out = c.toString();
+        for (int i = 0; i < arrsub.size();i++) {
+            out += "," + arrsub.get(i).toString();
+        }
+        return out;
+    }
 }
