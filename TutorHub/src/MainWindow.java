@@ -8,6 +8,7 @@ public class MainWindow extends JFrame{
     ImWindow m = new ImWindow();
     SignUpWindow u = new SignUpWindow();
     LandingWindow l = new LandingWindow();
+    LogInWindow x = new LogInWindow();
     SubjectWindow s = new SubjectWindow();
 
     public MainWindow() {
@@ -16,7 +17,11 @@ public class MainWindow extends JFrame{
         l.btnLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                remove(l.MainPanel);
+                add(x.MainPanel);
+                validate();
+                pack();
+                setVisible(true);
             }
         });
         l.btnSignup.addActionListener(new ActionListener() {
