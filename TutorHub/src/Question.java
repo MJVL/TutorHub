@@ -27,15 +27,16 @@ public class Question {
         return myQuestion;
     }
 
-    public void setMyImage(ImageIcon myImage) {
+    public void setImage(ImageIcon myImage) {
         this.myImage = myImage;
     }
 
-    public String toString() {
-        return m
+    public ImageIcon getImage() {
+        return myImage;
     }
 
-
-
+    public String toString() {
+        return myQuestion;
+    }
 
 }
