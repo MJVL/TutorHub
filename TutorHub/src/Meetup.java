@@ -49,4 +49,16 @@ public class Meetup {
     {
         this.arrtutors = arrtutors;
     }
+
+    public String toString(){
+        String out = "";
+        out = type + "," + location;
+        for(int i = 0;i<arrstudents.size();i++){
+            out += "," + arrstudents.get(i).toString();
+        }
+        for(int i = 0;i<arrtutors.size();i++){
+            out += "," + arrtutors.get(i).toString();
+        }
+         return out;
+    }
 }
