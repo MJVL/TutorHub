@@ -6,21 +6,22 @@ import java.awt.event.ActionListener;
 public class MainWindow extends JFrame{
 
     ImWindow m = new ImWindow();
+    LandingWindow l = new LandingWindow();
     SubjectWindow s = new SubjectWindow();
 
     public MainWindow() {
         setLayout(new CardLayout());
-        add(m.MainPanel);
-        m.btnStudent.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                remove(m.MainPanel);
-                add(s.MainGUI);
-                validate();
-                pack();
-                setVisible(true);
-            }
-        });
+        add(l.MainPanel);
+//        m.btnStudent.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+////                remove(m.MainPanel);
+////                add(s.MainGUI);
+////                validate();
+////                pack();
+//                setVisible(true);
+//            }
+//        });
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         pack();
         setVisible(true);
