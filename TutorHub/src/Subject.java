@@ -1,5 +1,5 @@
 public class Subject {
-    String mySubject;
+    private String mySubject;
 
     public Subject(){   //default constructor
         mySubject = "";
