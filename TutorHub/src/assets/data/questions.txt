@@ -1,4 +1,4 @@
 Math,Algebra 1,test,How do I factor?,n
 Math,Pre-Calc,nottest,How do I find slanted asmyptotes?,n
-Science,Chemistry,test,Is H2O polars?,n
+Science,Chemistry,test,Is H2O polar?,n
 Math,PreCalculus,test,What trig identities should I know?,n

@@ -12,117 +12,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="633" column="56" lean-forward="false" selection-start-line="633" selection-start-column="56" selection-end-line="633" selection-end-column="56" />
+            <state relative-caret-position="274">
+              <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
               <folding>
-                <element signature="class#2129:3160" expanded="false" />
-                <element signature="class#3206:3734" expanded="false" />
-                <element signature="method#actionPerformed#0;class#3206:3734" expanded="false" />
-                <element signature="class#3778:4302" expanded="false" />
-                <element signature="method#actionPerformed#0;class#3778:4302" expanded="false" />
-                <element signature="class#8270:9884" expanded="false" />
-                <element signature="method#actionPerformed#0;class#8270:9884" expanded="false" />
-                <element signature="class#9931:10284" expanded="false" />
-                <element signature="method#actionPerformed#0;class#9931:10284" expanded="false" />
-                <element signature="class#10331:10682" expanded="false" />
-                <element signature="method#actionPerformed#0;class#10331:10682" expanded="false" />
-                <element signature="class#10726:11185" expanded="false" />
-                <element signature="method#actionPerformed#0;class#10726:11185" expanded="false" />
-                <element signature="class#11230:11658" expanded="false" />
-                <element signature="method#actionPerformed#0;class#11230:11658" expanded="false" />
-                <element signature="class#11715:12072" expanded="false" />
-                <element signature="method#actionPerformed#0;class#11715:12072" expanded="false" />
-                <element signature="class#12119:12478" expanded="false" />
-                <element signature="method#actionPerformed#0;class#12119:12478" expanded="false" />
-                <element signature="class#12530:12891" expanded="false" />
-                <element signature="method#actionPerformed#0;class#12530:12891" expanded="false" />
-                <element signature="class#12935:13290" expanded="false" />
-                <element signature="method#actionPerformed#0;class#12935:13290" expanded="false" />
-                <element signature="class#13337:13698" expanded="false" />
-                <element signature="method#actionPerformed#0;class#13337:13698" expanded="false" />
-                <element signature="class#13751:14112" expanded="false" />
-                <element signature="method#actionPerformed#0;class#13751:14112" expanded="false" />
-                <element signature="class#14163:14514" expanded="false" />
-                <element signature="method#actionPerformed#0;class#14163:14514" expanded="false" />
-                <element signature="class#14559:14781" expanded="false" />
-                <element signature="method#actionPerformed#0;class#14559:14781" expanded="false" />
-                <element signature="class#14829:15086" expanded="false" />
-                <element signature="method#actionPerformed#0;class#14829:15086" expanded="false" />
-                <element signature="class#15133:15390" expanded="false" />
-                <element signature="method#actionPerformed#0;class#15133:15390" expanded="false" />
-                <element signature="class#15442:15672" expanded="false" />
-                <element signature="method#actionPerformed#0;class#15442:15672" expanded="false" />
-                <element signature="class#15721:15949" expanded="false" />
-                <element signature="method#actionPerformed#0;class#15721:15949" expanded="false" />
-                <element signature="class#15998:16226" expanded="false" />
-                <element signature="method#actionPerformed#0;class#15998:16226" expanded="false" />
-                <element signature="class#16278:16510" expanded="false" />
-                <element signature="method#actionPerformed#0;class#16278:16510" expanded="false" />
-                <element signature="class#16560:16789" expanded="false" />
-                <element signature="method#actionPerformed#0;class#16560:16789" expanded="false" />
-                <element signature="class#16837:17064" expanded="false" />
-                <element signature="method#actionPerformed#0;class#16837:17064" expanded="false" />
-                <element signature="class#17121:17351" expanded="false" />
-                <element signature="method#actionPerformed#0;class#17121:17351" expanded="false" />
-                <element signature="class#17406:17635" expanded="false" />
-                <element signature="method#actionPerformed#0;class#17406:17635" expanded="false" />
-                <element signature="class#17687:17913" expanded="false" />
-                <element signature="method#actionPerformed#0;class#17687:17913" expanded="false" />
-                <element signature="class#17963:18187" expanded="false" />
-                <element signature="method#actionPerformed#0;class#17963:18187" expanded="false" />
-                <element signature="class#18238:18455" expanded="false" />
-                <element signature="method#actionPerformed#0;class#18238:18455" expanded="false" />
-                <element signature="class#18505:18722" expanded="false" />
-                <element signature="method#actionPerformed#0;class#18505:18722" expanded="false" />
-                <element signature="class#18767:18978" expanded="false" />
-                <element signature="method#actionPerformed#0;class#18767:18978" expanded="false" />
-                <element signature="class#19028:19244" expanded="false" />
-                <element signature="method#actionPerformed#0;class#19028:19244" expanded="false" />
-                <element signature="class#19294:19510" expanded="false" />
-                <element signature="method#actionPerformed#0;class#19294:19510" expanded="false" />
-                <element signature="class#19556:19775" expanded="false" />
-                <element signature="method#actionPerformed#0;class#19556:19775" expanded="false" />
-                <element signature="class#19827:20045" expanded="false" />
-                <element signature="method#actionPerformed#0;class#19827:20045" expanded="false" />
-                <element signature="class#20092:20305" expanded="false" />
-                <element signature="method#actionPerformed#0;class#20092:20305" expanded="false" />
-                <element signature="class#20355:20579" expanded="false" />
-                <element signature="method#actionPerformed#0;class#20355:20579" expanded="false" />
-                <element signature="class#20630:20856" expanded="false" />
-                <element signature="method#actionPerformed#0;class#20630:20856" expanded="false" />
-                <element signature="class#20904:21126" expanded="false" />
-                <element signature="method#actionPerformed#0;class#20904:21126" expanded="false" />
-                <element signature="class#21179:21399" expanded="false" />
-                <element signature="method#actionPerformed#0;class#21179:21399" expanded="false" />
-                <element signature="class#21451:21671" expanded="false" />
-                <element signature="method#actionPerformed#0;class#21451:21671" expanded="false" />
-                <element signature="class#21725:21947" expanded="false" />
-                <element signature="method#actionPerformed#0;class#21725:21947" expanded="false" />
-                <element signature="class#22001:22223" expanded="false" />
-                <element signature="method#actionPerformed#0;class#22001:22223" expanded="false" />
-                <element signature="class#22275:22495" expanded="false" />
-                <element signature="method#actionPerformed#0;class#22275:22495" expanded="false" />
-                <element signature="class#22545:22763" expanded="false" />
-                <element signature="method#actionPerformed#0;class#22545:22763" expanded="false" />
-                <element signature="class#22824:23053" expanded="false" />
-                <element signature="method#actionPerformed#0;class#22824:23053" expanded="false" />
-                <element signature="class#23108:23331" expanded="false" />
-                <element signature="method#actionPerformed#0;class#23108:23331" expanded="false" />
-                <element signature="class#23390:23618" expanded="false" />
-                <element signature="method#actionPerformed#0;class#23390:23618" expanded="false" />
-                <element signature="class#23673:23896" expanded="false" />
-                <element signature="method#actionPerformed#0;class#23673:23896" expanded="false" />
-                <element signature="class#23950:24173" expanded="false" />
-                <element signature="method#actionPerformed#0;class#23950:24173" expanded="false" />
-                <element signature="class#24223:24441" expanded="false" />
-                <element signature="method#actionPerformed#0;class#24223:24441" expanded="false" />
-                <element signature="class#24490:25282" expanded="false" />
-                <element signature="method#actionPerformed#0;class#24490:25282" expanded="false" />
                 <element signature="method#Update#0;class#MainWindow#0" expanded="false" />
-                <element signature="e#25954#25968#0" expanded="false" />
+                <element signature="e#26229#26243#0" expanded="false" />
                 <element signature="method#openmeetups#0;class#MainWindow#0" expanded="false" />
                 <element signature="method#saveLogin#0;class#MainWindow#0" expanded="false" />
                 <element signature="method#savestudent#0;class#MainWindow#0" expanded="false" />
@@ -135,30 +32,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/data/test1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Tutor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+            <state relative-caret-position="150">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TutorWindow.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TutorWindow.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
+      <file leaf-file-name="Credentials.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Credentials.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <folding>
+                <element signature="method#Credentials#1;class#Credentials#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Subject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Subject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Topic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Topic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Database.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Database.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -174,13 +96,6 @@
       </file>
       <file leaf-file-name="ProgrammingWindow.form" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ProgrammingWindow.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionWindow.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/QuestionWindow.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
           </provider>
@@ -203,7 +118,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="questions.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="questions.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/data/questions.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -241,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/LogInWindow.form" />
         <option value="$PROJECT_DIR$/src/LogInWindow.java" />
         <option value="$PROJECT_DIR$/src/assets/data/help.txt" />
-        <option value="$PROJECT_DIR$/src/Tutor.java" />
         <option value="$PROJECT_DIR$/src/ImageProcessing.java" />
         <option value="$PROJECT_DIR$/src/SignUpWindow.java" />
         <option value="$PROJECT_DIR$/src/StudentLandingWindow.java" />
@@ -269,8 +183,9 @@
         <option value="$PROJECT_DIR$/src/TutorWindow.form" />
         <option value="$PROJECT_DIR$/src/TutorWindow.java" />
         <option value="$PROJECT_DIR$/src/QuestionWindow.form" />
-        <option value="$PROJECT_DIR$/src/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/Tutor.java" />
         <option value="$PROJECT_DIR$/src/assets/data/questions.txt" />
+        <option value="$PROJECT_DIR$/src/MainWindow.java" />
       </list>
     </option>
   </component>
@@ -309,25 +224,6 @@
               <item name="TutorHub" type="b2602c69:ProjectViewProjectNode" />
               <item name="TutorHub" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TutorHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TutorHub" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TutorHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TutorHub" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TutorHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TutorHub" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="QuestionWindow" type="e9f4de52:FormNode" />
             </path>
           </expand>
           <select />
@@ -504,20 +400,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ImageProcessing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/data/vanleeuwenm.java" />
     <entry file="file://$PROJECT_DIR$/src/assets/data/null.txt" />
     <entry file="file://$PROJECT_DIR$/src/assets/data/arkoc.txt" />
     <entry file="file://$PROJECT_DIR$/src/assets/data/help.txt">
@@ -554,16 +441,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/data/answers.txt" />
-    <entry file="file://$PROJECT_DIR$/src/Credentials.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding>
-            <element signature="method#Credentials#1;class#Credentials#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LogInWindow.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -591,14 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -640,17 +509,6 @@
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="method#toString#0;class#Student#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Topic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-          <folding>
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -750,14 +608,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/data/vanleeuwenm.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/data/logins.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -766,25 +616,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/data/test1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TutorWindow.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/QuestionWindow.form">
@@ -807,138 +641,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TutorWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ProgrammingWindow.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="633" column="56" lean-forward="false" selection-start-line="633" selection-start-column="56" selection-end-line="633" selection-end-column="56" />
-          <folding>
-            <element signature="class#2129:3160" expanded="false" />
-            <element signature="class#3206:3734" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3206:3734" expanded="false" />
-            <element signature="class#3778:4302" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3778:4302" expanded="false" />
-            <element signature="class#8270:9884" expanded="false" />
-            <element signature="method#actionPerformed#0;class#8270:9884" expanded="false" />
-            <element signature="class#9931:10284" expanded="false" />
-            <element signature="method#actionPerformed#0;class#9931:10284" expanded="false" />
-            <element signature="class#10331:10682" expanded="false" />
-            <element signature="method#actionPerformed#0;class#10331:10682" expanded="false" />
-            <element signature="class#10726:11185" expanded="false" />
-            <element signature="method#actionPerformed#0;class#10726:11185" expanded="false" />
-            <element signature="class#11230:11658" expanded="false" />
-            <element signature="method#actionPerformed#0;class#11230:11658" expanded="false" />
-            <element signature="class#11715:12072" expanded="false" />
-            <element signature="method#actionPerformed#0;class#11715:12072" expanded="false" />
-            <element signature="class#12119:12478" expanded="false" />
-            <element signature="method#actionPerformed#0;class#12119:12478" expanded="false" />
-            <element signature="class#12530:12891" expanded="false" />
-            <element signature="method#actionPerformed#0;class#12530:12891" expanded="false" />
-            <element signature="class#12935:13290" expanded="false" />
-            <element signature="method#actionPerformed#0;class#12935:13290" expanded="false" />
-            <element signature="class#13337:13698" expanded="false" />
-            <element signature="method#actionPerformed#0;class#13337:13698" expanded="false" />
-            <element signature="class#13751:14112" expanded="false" />
-            <element signature="method#actionPerformed#0;class#13751:14112" expanded="false" />
-            <element signature="class#14163:14514" expanded="false" />
-            <element signature="method#actionPerformed#0;class#14163:14514" expanded="false" />
-            <element signature="class#14559:14781" expanded="false" />
-            <element signature="method#actionPerformed#0;class#14559:14781" expanded="false" />
-            <element signature="class#14829:15086" expanded="false" />
-            <element signature="method#actionPerformed#0;class#14829:15086" expanded="false" />
-            <element signature="class#15133:15390" expanded="false" />
-            <element signature="method#actionPerformed#0;class#15133:15390" expanded="false" />
-            <element signature="class#15442:15672" expanded="false" />
-            <element signature="method#actionPerformed#0;class#15442:15672" expanded="false" />
-            <element signature="class#15721:15949" expanded="false" />
-            <element signature="method#actionPerformed#0;class#15721:15949" expanded="false" />
-            <element signature="class#15998:16226" expanded="false" />
-            <element signature="method#actionPerformed#0;class#15998:16226" expanded="false" />
-            <element signature="class#16278:16510" expanded="false" />
-            <element signature="method#actionPerformed#0;class#16278:16510" expanded="false" />
-            <element signature="class#16560:16789" expanded="false" />
-            <element signature="method#actionPerformed#0;class#16560:16789" expanded="false" />
-            <element signature="class#16837:17064" expanded="false" />
-            <element signature="method#actionPerformed#0;class#16837:17064" expanded="false" />
-            <element signature="class#17121:17351" expanded="false" />
-            <element signature="method#actionPerformed#0;class#17121:17351" expanded="false" />
-            <element signature="class#17406:17635" expanded="false" />
-            <element signature="method#actionPerformed#0;class#17406:17635" expanded="false" />
-            <element signature="class#17687:17913" expanded="false" />
-            <element signature="method#actionPerformed#0;class#17687:17913" expanded="false" />
-            <element signature="class#17963:18187" expanded="false" />
-            <element signature="method#actionPerformed#0;class#17963:18187" expanded="false" />
-            <element signature="class#18238:18455" expanded="false" />
-            <element signature="method#actionPerformed#0;class#18238:18455" expanded="false" />
-            <element signature="class#18505:18722" expanded="false" />
-            <element signature="method#actionPerformed#0;class#18505:18722" expanded="false" />
-            <element signature="class#18767:18978" expanded="false" />
-            <element signature="method#actionPerformed#0;class#18767:18978" expanded="false" />
-            <element signature="class#19028:19244" expanded="false" />
-            <element signature="method#actionPerformed#0;class#19028:19244" expanded="false" />
-            <element signature="class#19294:19510" expanded="false" />
-            <element signature="method#actionPerformed#0;class#19294:19510" expanded="false" />
-            <element signature="class#19556:19775" expanded="false" />
-            <element signature="method#actionPerformed#0;class#19556:19775" expanded="false" />
-            <element signature="class#19827:20045" expanded="false" />
-            <element signature="method#actionPerformed#0;class#19827:20045" expanded="false" />
-            <element signature="class#20092:20305" expanded="false" />
-            <element signature="method#actionPerformed#0;class#20092:20305" expanded="false" />
-            <element signature="class#20355:20579" expanded="false" />
-            <element signature="method#actionPerformed#0;class#20355:20579" expanded="false" />
-            <element signature="class#20630:20856" expanded="false" />
-            <element signature="method#actionPerformed#0;class#20630:20856" expanded="false" />
-            <element signature="class#20904:21126" expanded="false" />
-            <element signature="method#actionPerformed#0;class#20904:21126" expanded="false" />
-            <element signature="class#21179:21399" expanded="false" />
-            <element signature="method#actionPerformed#0;class#21179:21399" expanded="false" />
-            <element signature="class#21451:21671" expanded="false" />
-            <element signature="method#actionPerformed#0;class#21451:21671" expanded="false" />
-            <element signature="class#21725:21947" expanded="false" />
-            <element signature="method#actionPerformed#0;class#21725:21947" expanded="false" />
-            <element signature="class#22001:22223" expanded="false" />
-            <element signature="method#actionPerformed#0;class#22001:22223" expanded="false" />
-            <element signature="class#22275:22495" expanded="false" />
-            <element signature="method#actionPerformed#0;class#22275:22495" expanded="false" />
-            <element signature="class#22545:22763" expanded="false" />
-            <element signature="method#actionPerformed#0;class#22545:22763" expanded="false" />
-            <element signature="class#22824:23053" expanded="false" />
-            <element signature="method#actionPerformed#0;class#22824:23053" expanded="false" />
-            <element signature="class#23108:23331" expanded="false" />
-            <element signature="method#actionPerformed#0;class#23108:23331" expanded="false" />
-            <element signature="class#23390:23618" expanded="false" />
-            <element signature="method#actionPerformed#0;class#23390:23618" expanded="false" />
-            <element signature="class#23673:23896" expanded="false" />
-            <element signature="method#actionPerformed#0;class#23673:23896" expanded="false" />
-            <element signature="class#23950:24173" expanded="false" />
-            <element signature="method#actionPerformed#0;class#23950:24173" expanded="false" />
-            <element signature="class#24223:24441" expanded="false" />
-            <element signature="method#actionPerformed#0;class#24223:24441" expanded="false" />
-            <element signature="class#24490:25282" expanded="false" />
-            <element signature="method#actionPerformed#0;class#24490:25282" expanded="false" />
-            <element signature="method#Update#0;class#MainWindow#0" expanded="false" />
-            <element signature="e#25954#25968#0" expanded="false" />
-            <element signature="method#openmeetups#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#saveLogin#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#savestudent#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#savetutor#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#savemeetings#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#MoveListener#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#openQuestionWindow#0;class#MainWindow#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/Questions.txt">
@@ -949,11 +654,103 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/data/test1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/data/testuser.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/data/vanleeuwenm.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TutorWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Topic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Credentials.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding>
+            <element signature="method#Credentials#1;class#Credentials#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/data/questions.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="59" lean-forward="false" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <element signature="method#Update#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#26229#26243#0" expanded="false" />
+            <element signature="method#openmeetups#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#saveLogin#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#savestudent#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#savetutor#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#savemeetings#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#MoveListener#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#openQuestionWindow#0;class#MainWindow#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

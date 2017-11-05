@@ -7,9 +7,7 @@ public class Tutor {
 
     public Tutor() {
         arrsub = new ArrayList<Subject>();
-        hours = 0;
-        numrequested = 0;
-        numattended = 0;
+        hours = numrequested = numattended = 0;
     }
 
     public Tutor(String path){
