@@ -10,18 +10,11 @@
     </properties>
     <border type="none"/>
     <children>
-      <component id="8e2c4" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <font name="Futura" size="48" style="1"/>
-          <text value="I Need Help With:"/>
-        </properties>
-      </component>
       <component id="475d2" class="javax.swing.JButton" binding="btnHumanGeography">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="300" height="-1"/>
+          </grid>
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
@@ -32,7 +25,9 @@
       </component>
       <component id="c6501" class="javax.swing.JButton" binding="btnUSHistory">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="300" height="-1"/>
+          </grid>
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
@@ -43,7 +38,9 @@
       </component>
       <component id="adb49" class="javax.swing.JButton" binding="btnEuropeanHistory">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="300" height="-1"/>
+          </grid>
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
@@ -54,7 +51,9 @@
       </component>
       <component id="c381f" class="javax.swing.JButton" binding="btnPsychology">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="300" height="-1"/>
+          </grid>
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
@@ -65,7 +64,9 @@
       </component>
       <component id="4d7aa" class="javax.swing.JButton" binding="btnGovernment">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="300" height="-1"/>
+          </grid>
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
@@ -75,12 +76,24 @@
       </component>
       <component id="6a4af" class="javax.swing.JButton" binding="btnOther">
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="300" height="-1"/>
+          </grid>
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
           <icon value="assets/icons/icons8-ellipsis.png"/>
           <text value="Other"/>
+        </properties>
+      </component>
+      <component id="fc24f" class="javax.swing.JLabel" binding="lblTitle">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Futura" size="48"/>
+          <foreground color="-1"/>
+          <text value="I Need Help With:"/>
         </properties>
       </component>
     </children>
