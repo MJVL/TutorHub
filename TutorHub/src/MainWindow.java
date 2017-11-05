@@ -270,9 +270,9 @@ public class MainWindow extends JFrame {
     }
 
     public void savetutor(String path, Tutor t){
-        try(PrintWriter pw = new PrintWriter(new FileOutputStream(new File(path),true))){
-            pw.println(t.toString());
-            pw.close();
+        try(PrintWriter out = new PrintWriter(path)  ){
+            out.println(t.toString());
+            out.close();
         }catch(FileNotFoundException e1){
             e1.printStackTrace();
         }
