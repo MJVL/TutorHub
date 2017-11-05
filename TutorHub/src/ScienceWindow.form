@@ -73,7 +73,7 @@
           <text value="Other"/>
         </properties>
       </component>
-      <component id="6383b" class="javax.swing.JLabel" binding="lblTitle">
+      <component id="c9c36" class="javax.swing.JLabel" binding="lblTitle">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>

@@ -4,6 +4,8 @@ public class TutorWindow {
     protected JPanel MainPanel;
     protected JList lstQuestions;
     protected JList lstSubjects;
-    protected JComboBox cboxAddSubject;
+    private JLabel lblTitle;
+    protected JButton btnAnswer;
+    protected JButton btnAdd;
     protected boolean Visible;
 }

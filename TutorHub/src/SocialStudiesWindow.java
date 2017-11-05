@@ -8,6 +8,7 @@ public class SocialStudiesWindow {
     protected JButton btnPsychology;
     protected JButton btnGovernment;
     protected JButton btnOther;
+    private JLabel lblTitle;
     protected boolean Visible;
 
     private void createUIComponents() {

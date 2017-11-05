@@ -8,5 +8,6 @@ public class ForeignLanguageWindow {
     protected JButton btnPortugues;
     protected JButton btnOther;
     protected JPanel MainPanel;
+    private JLabel lblTitle;
     protected boolean Visible;
 }

@@ -8,5 +8,6 @@ public class ScienceWindow {
     protected JButton btnForensics;
     protected JButton btnPhysics;
     protected JButton btnOther;
+    private JLabel lblTitle;
     protected boolean Visible;
 }

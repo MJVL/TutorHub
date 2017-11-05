@@ -8,6 +8,8 @@ import java.io.*;
 import java.awt.event.*;
 
 public class MainWindow extends JFrame {
+
+    int linenum;
     ImWindow m = new ImWindow();
     SignUpWindow u = new SignUpWindow();
     LandingWindow l = new LandingWindow();
@@ -40,6 +42,8 @@ public class MainWindow extends JFrame {
     String UPass = null;
     String TempUsername, TempPassword, TempEmail;
     DefaultListModel ActiveRequests = new DefaultListModel();
+    DefaultListModel Subjects = new DefaultListModel();
+    DefaultListModel Questions = new DefaultListModel();
 
     public MainWindow() {
         setLayout(new CardLayout());
@@ -119,8 +123,7 @@ public class MainWindow extends JFrame {
                                 UPass = x.txtPassword.getText();
                                 TempUsername = SplitArr[0];
                                 FirstUser = false;
-                                if (SplitArr[3].equals("t")) {
-                                    System.out.println("Tutor");
+                                if (SplitArr[3].equals("t")) { ;
                                     UserT = new Tutor("src/assets/data/" + TempUsername + ".txt");
                                     sl.Visible = true;
                                     x.Visible = false;
@@ -130,6 +133,23 @@ public class MainWindow extends JFrame {
                                     pack();
                                     setVisible(true);
                                     Tutor = true;
+                                    for (int t = 0; t < UserT.getArrsub().size(); t++) {
+                                        Subjects.addElement(UserT.getArrsub().get(t));
+                                    }
+                                    tl.lstSubjects.setModel(Subjects);
+                                    try {
+                                        Scanner Freader2 = new Scanner(new File("src/assets/data/questions.txt"));
+                                        while (Freader2.hasNextLine()) {
+                                            String[] SplitArr2 = Freader2.nextLine().split(",");
+                                            if (SplitArr2[4].equals("n")) {
+                                                Questions.addElement("Subject: " + SplitArr2[0] + ", Topic: " + SplitArr2[1]);
+                                                Questions.addElement("Question: " + SplitArr2[3]);
+                                                tl.lstQuestions.setModel(Questions);
+                                            }
+                                        }
+                                    } catch (IOException e2) {
+                                        System.err.println("File Error");
+                                    }
                                     JOptionPane.showMessageDialog(null, "Login Successful");
                                     break;
                                 } else {
@@ -188,6 +208,7 @@ public class MainWindow extends JFrame {
                     System.err.println("File Error");
                 }
                 ARW.lstRequests.setModel(ActiveRequests);
+                ARW.scrlMain.setViewportView(ARW.lstRequests);
             }
         });
         ARW.btnReturn.addActionListener(new ActionListener() {
@@ -596,10 +617,33 @@ public class MainWindow extends JFrame {
                 try(PrintWriter pw = new PrintWriter(new FileOutputStream(new File("src/assets/data/questions.txt"),true))){
                     pw.println(UserTopic.getSubject() + "," + UserTopic.getTopic() + "," + TempUsername + "," + q.txtQuestion.getText() + ",n");
                     pw.close();
+                    remove(q.MainPanel);
+                    add(sl.MainPanel);
+                    validate();
+                    pack();
+                    setVisible(true);
                     JOptionPane.showMessageDialog(null,"Question Submitted");
                 } catch (FileNotFoundException e1) {
                     e1.printStackTrace();
                 }
+            }
+        });
+
+        tl.btnAnswer.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ArrayList<String> al=new ArrayList<String>();
+                try {
+                    Scanner Freader2 = new Scanner(new File("src/assets/data/questions.txt"));
+                    while (Freader2.hasNextLine()) {
+
+                    }
+                } catch (IOException e2) {
+                    System.err.println("File Error");
+                }
+                String Answer = JOptionPane.showInputDialog("Answer");
+                linenum = tl.lstQuestions.getSelectedIndex();
+                JOptionPane.showMessageDialog(null,"Your answer was submitted.");
             }
         });
     }

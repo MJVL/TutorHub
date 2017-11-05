@@ -10,5 +10,6 @@ public class MathWindow {
     protected JButton btnAQR;
     protected JButton btnOther;
     protected JPanel MainPanel;
+    private JLabel lblTitle;
     protected boolean Visible;
 }

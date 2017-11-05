@@ -6,5 +6,6 @@ public class LanguageArtsWindow {
     protected JButton btnLiterature;
     protected JButton btnOther;
     protected JPanel MainPanel;
+    private JLabel lblTitle;
     protected boolean Visible;
 }
