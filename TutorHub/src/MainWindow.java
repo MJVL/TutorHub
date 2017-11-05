@@ -13,10 +13,12 @@ public class MainWindow extends JFrame {
     ImWindow m = new ImWindow();
     SignUpWindow u = new SignUpWindow();
     LandingWindow l = new LandingWindow();
+    StudentLandingWindow sl = new StudentLandingWindow();
     LogInWindow x = new LogInWindow();
     Boolean FirstL = true;
     Boolean FirstUser = true;
     Boolean FirstS = true;
+    Boolean FirstFail = true;
     SubjectWindow s = new SubjectWindow();
     Boolean Tutor = false;
     Boolean Student = false;
@@ -79,19 +81,21 @@ public class MainWindow extends JFrame {
                             while (Freader.hasNextLine()) {
                                 String[] SplitArr = Freader.nextLine().split(",");
                                 if (SplitArr[0].equals(x.txtUsername.getText()) && SplitArr[1].equals(x.txtPassword.getText())) {
-                                    System.out.println("Login True");
+                                    x.txtUsername.setText("Login Successful");
+                                    x.txtPassword.setText("Login Successful");
                                     FirstUser = false;
                                     if (SplitArr[2].equals("t")) {
                                         Tutor = true;
                                         break;
                                     } else {
                                         Student = true;
-                                        FirstL = false;
                                         break;
                                     }
-                                } else {
-                                    System.out.println("Login False");
                                 }
+                            }
+                            if (!Tutor && !Student) {
+                                x.txtUsername.setText("Login Failed");
+                                x.txtPassword.setText("Login Failed");
                             }
                         } catch (IOException e1) {
                             System.err.println("File Error");
@@ -100,10 +104,19 @@ public class MainWindow extends JFrame {
                 }
             });
         }
-        if (Tutor) {
-            JOptionPane.showMessageDialog(null,UserT.toString());
-            Tutor = false;
+        if (Student) {
+            sl.Visible = true;
+            x.Visible = false;
+            remove(x.MainPanel);
+            add(sl.MainPanel);
+            validate();
+            pack();
+            setVisible(true);
         }
+        //if (Tutor) {
+      //      JOptionPane.showMessageDialog(null,UserT.toString());
+       //     Tutor = false;
+        //}
     }
 
 
