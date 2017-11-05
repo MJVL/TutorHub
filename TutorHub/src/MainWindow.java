@@ -13,6 +13,7 @@ public class MainWindow extends JFrame {
     ImWindow m = new ImWindow();
     SignUpWindow u = new SignUpWindow();
     LandingWindow l = new LandingWindow();
+    StudentLandingWindow sl = new StudentLandingWindow();
     LogInWindow x = new LogInWindow();
     Boolean FirstL = true;
     Boolean FirstUser = true;
@@ -74,14 +75,14 @@ public class MainWindow extends JFrame {
             x.btnLogin.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    FirstFail = true;
                     if (FirstUser) {
                         try {
                             Scanner Freader = new Scanner(new File("src/assets/data/logins.txt"));
                             while (Freader.hasNextLine()) {
                                 String[] SplitArr = Freader.nextLine().split(",");
                                 if (SplitArr[0].equals(x.txtUsername.getText()) && SplitArr[1].equals(x.txtPassword.getText())) {
-                                    JOptionPane.showMessageDialog(null,"Login Successful");
+                                    x.txtUsername.setText("Login Successful");
+                                    x.txtPassword.setText("Login Successful");
                                     FirstUser = false;
                                     if (SplitArr[2].equals("t")) {
                                         Tutor = true;
@@ -92,6 +93,10 @@ public class MainWindow extends JFrame {
                                     }
                                 }
                             }
+                            if (!Tutor && !Student) {
+                                x.txtUsername.setText("Login Failed");
+                                x.txtPassword.setText("Login Failed");
+                            }
                         } catch (IOException e1) {
                             System.err.println("File Error");
                         }
@@ -99,16 +104,19 @@ public class MainWindow extends JFrame {
                 }
             });
         }
-        if (FirstFail && x.Visible) {
-            x.txtUsername.setText("");
-            x.txtPassword.setText("");
-            JOptionPane.showMessageDialog(null,"Login Failed");
-            FirstFail = false;
+        if (Student) {
+            sl.Visible = true;
+            x.Visible = false;
+            remove(x.MainPanel);
+            add(sl.MainPanel);
+            validate();
+            pack();
+            setVisible(true);
         }
-        if (Tutor) {
-            JOptionPane.showMessageDialog(null,UserT.toString());
-            Tutor = false;
-        }
+        //if (Tutor) {
+      //      JOptionPane.showMessageDialog(null,UserT.toString());
+       //     Tutor = false;
+        //}
     }
 
 
