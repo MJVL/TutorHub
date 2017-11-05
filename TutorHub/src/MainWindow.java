@@ -5,6 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.*;
 import java.awt.event.*;
@@ -141,7 +142,7 @@ public class MainWindow extends JFrame {
             validate();
             pack();
             setVisible(true);
-            
+
         }
         //if (Tutor) {
       //      JOptionPane.showMessageDialog(null,UserT.toString());
@@ -149,6 +150,73 @@ public class MainWindow extends JFrame {
         //}
     }
 
+    public void openmeetups(String path){
+        ArrayList<String> arrin = new ArrayList<String>();
+        ArrayList<Meetup> arrmeetings = new ArrayList<Meetup>();
+        ArrayList<String> arrstudentnames = new ArrayList<String>();
+        ArrayList<String> arrtutornames = new ArrayList<String>();
+        Meetup temp = new Meetup();
+        boolean detect = false;
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                arrin.add(line);
+            }
+            br.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        for(int i = 0;i<arrin.size();i++){
+            String parts[] = arrin.get(i).split(",");
+            temp.setType(parts[0]);
+            temp.setLocation(parts[1]);
+            for(int x = 2;x<parts.length;x++){
+                if(parts[x].equals("+")){
+                    detect = true;
+                }
+                else if(detect==false){
+                    arrstudentnames.add(parts[x]);
+                }
+                else{
+                    arrtutornames.add(parts[x]);
+                }
+            }
+            temp.setArrstudents(arrstudentnames);
+            temp.setArrtutors(arrtutornames);
+            arrmeetings.add(temp);
+        }
+    }
+
+    public void savestudent(String path, Student s){
+        try(PrintWriter out = new PrintWriter(path)  ){
+            out.println(s.toString());
+            out.close();
+        } catch (FileNotFoundException e1) {
+            e1.printStackTrace();
+        }
+    }
+
+    public void savetutor(String path, Tutor t){
+        try(PrintWriter out = new PrintWriter()){
+            out.println(t.toString());
+            out.close();
+        }catch(FileNotFoundException e1){
+            e1.printStackTrace();
+        }
+    }
+
+    public void savemeetings(String paths, ArrayList<Meetup> arrmeetings){
+        try(PrintWriter out = new PrintWriter()){
+            for(int i = 0;i<arrmeetings.size();i++){
+                out.println(arrmeetings.get(i).toString());
+            }
+            out.close();
+        } catch (FileNotFoundException e1){
+            e1.printStackTrace();
+        }
+    }
 
     private class MoveListener implements ActionListener {
 

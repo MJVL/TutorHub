@@ -1,17 +1,21 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Meetup {
     private String type, location;
-    private ArrayList<Students> arrstudents = new ArrayList<Students>();
-    private ArrayList<Tutors> arrtutors = new ArrayList<Tutors>();
+    private ArrayList<String> arrstudents = new ArrayList<String>();
+    private ArrayList<String> arrtutors = new ArrayList<String>();
 
     public Meetup()
     {
         type = "";
         location  = "";
-        arrstudents = new ArrayList<Students>();
-        arrtutors = new ArrayList<Tutors>();
+        arrstudents = new ArrayList<String>();
+        arrtutors = new ArrayList<String>();
     }
 
     public String getLocation() {
@@ -22,11 +26,11 @@ public class Meetup {
         return type;
     }
 
-    public ArrayList<Students> getArrstudents() {
+    public ArrayList<String> getArrstudents() {
         return arrstudents;
     }
 
-    public ArrayList<Tutors> getArrtutors() {
+    public ArrayList<String> getArrtutors() {
         return arrtutors;
     }
 
@@ -40,12 +44,12 @@ public class Meetup {
         this.location = location;
     }
 
-    public void setArrstudents(ArrayList<Students> arrstudents)
+    public void setArrstudents(ArrayList<String> arrstudents)
     {
         this.arrstudents = arrstudents;
     }
 
-    public void setArrtutors(ArrayList<Tutors> arrtutors)
+    public void setArrtutors(ArrayList<String> arrtutors)
     {
         this.arrtutors = arrtutors;
     }
@@ -54,10 +58,10 @@ public class Meetup {
         String out = "";
         out = type + "," + location;
         for(int i = 0;i<arrstudents.size();i++){
-            out += "," + arrstudents.get(i).toString();
+            out += "," + arrstudents.get(i);
         }
         for(int i = 0;i<arrtutors.size();i++){
-            out += "," + arrtutors.get(i).toString();
+            out += "," + arrtutors.get(i);
         }
          return out;
     }
