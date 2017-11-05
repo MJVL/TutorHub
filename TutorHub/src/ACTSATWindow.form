@@ -38,7 +38,7 @@
         <properties>
           <font name="Futura" size="24"/>
           <hideActionText value="true"/>
-          <horizontalTextPosition value="10"/>
+          <horizontalTextPosition value="11"/>
           <icon value="assets/icons/icons8-s.png"/>
           <text value="SAT"/>
         </properties>

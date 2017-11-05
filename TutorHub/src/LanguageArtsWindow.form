@@ -48,7 +48,7 @@
         <properties>
           <font name="Futura" size="24"/>
           <horizontalAlignment value="0"/>
-          <horizontalTextPosition value="10"/>
+          <horizontalTextPosition value="11"/>
           <icon value="assets/icons/icons8-book-filled.png"/>
           <text value="Literature"/>
         </properties>
@@ -59,7 +59,7 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
-          <horizontalTextPosition value="10"/>
+          <horizontalTextPosition value="11"/>
           <icon value="assets/icons/icons8-book.png"/>
           <text value="Other"/>
         </properties>
