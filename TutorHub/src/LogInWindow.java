@@ -1,10 +1,10 @@
 import javax.swing.*;
 
 public class LogInWindow {
-    private JButton btnLogin;
-    private JTextField txtUsername;
-    private JTextField txtPassword;
+    protected JButton btnLogin;
+    protected JTextField txtUsername;
+    protected JTextField txtPassword;
     protected JPanel MainPanel;
-    private JLabel lblEmail;
+    protected JLabel lblEmail;
     protected Boolean Visible;
 }
