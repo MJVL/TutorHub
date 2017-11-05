@@ -27,9 +27,6 @@ public class Student {
         String parts[] = arrin.split(",");
         numattended = Integer.valueOf(parts[0]);
         numrequested = Integer.valueOf(parts[1]);
-        for(int i = 2;i<parts.length;i++){
-            arrquestion.add(new Question(parts[i]));
-        }
     }
 
     public int getNumrequested(){
