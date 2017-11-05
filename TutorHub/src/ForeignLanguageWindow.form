@@ -48,7 +48,7 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
-          <horizontalTextPosition value="10"/>
+          <horizontalTextPosition value="11"/>
           <icon value="assets/icons/icons8-spain.png"/>
           <text value="Spanish"/>
         </properties>
@@ -59,7 +59,7 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
-          <horizontalTextPosition value="10"/>
+          <horizontalTextPosition value="11"/>
           <icon value="assets/icons/icons8-germany.png"/>
           <text value="German"/>
         </properties>
@@ -81,7 +81,7 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
-          <horizontalTextPosition value="10"/>
+          <horizontalTextPosition value="11"/>
           <icon value="assets/icons/icons8-language.png"/>
           <text value="Other"/>
         </properties>
