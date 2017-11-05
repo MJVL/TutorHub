@@ -31,6 +31,7 @@ public class MainWindow extends JFrame {
     String Username = null;
     String UPass = null;
     String TempUsername, TempPassword, TempEmail;
+    DefaultListModel ActiveRequests = new DefaultListModel();
 
     public MainWindow() {
         setLayout(new CardLayout());
