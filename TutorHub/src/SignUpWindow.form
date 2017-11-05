@@ -77,6 +77,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="36"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-create.png"/>
           <text value="Sign Up"/>
         </properties>
       </component>
