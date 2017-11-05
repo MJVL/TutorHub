@@ -34,10 +34,6 @@ public class Tutor {
         }
     }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> a747f882aabab9ffcce80ec440c4019108de5c48
     public ArrayList<Subject> getArrsub() {
         return arrsub;
     }
@@ -69,10 +65,7 @@ public class Tutor {
     public String toString()
     {
         String out = "";
-<<<<<<< HEAD
-=======
         out = hours + "," + numattended + "," + numrequested;
->>>>>>> a747f882aabab9ffcce80ec440c4019108de5c48
         for(int i = 0;i<arrsub.size();i++) {
             out += "," + arrsub.get(i).toString();
         }
