@@ -15,8 +15,11 @@ public class MainWindow extends JFrame {
     LandingWindow l = new LandingWindow();
     LogInWindow x = new LogInWindow();
     Boolean FirstL = true;
+    Boolean FirstUser = true;
+    Boolean FirstS = true;
     SubjectWindow s = new SubjectWindow();
     Boolean Tutor = false;
+    Boolean Student = false;
     Tutor UserT = null;
     Student UserS = null;
     javax.swing.Timer timer;
@@ -54,21 +57,46 @@ public class MainWindow extends JFrame {
             l.btnSignup.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    l.Visible = false;
-                    u.Visible = true;
-                    remove(l.MainPanel);
-                    add(u.MainPanel);
-                    validate();
-                    pack();
-                    setVisible(true);
+                    if (FirstL) {
+                        l.Visible = false;
+                        u.Visible = true;
+                        remove(l.MainPanel);
+                        add(u.MainPanel);
+                        validate();
+                        pack();
+                        setVisible(true);
+                    }
                 }
             });
         }
         if (x.Visible) {
             x.btnLogin.addActionListener(new ActionListener() {
                 @Override
-                public void actionPerformed(ActionEvent e) { ;
-                    Tutor = true;
+                public void actionPerformed(ActionEvent e) {
+                    if (FirstUser) {
+                        try {
+                            Scanner Freader = new Scanner(new File("src/assets/data/logins.txt"));
+                            while (Freader.hasNextLine()) {
+                                String[] SplitArr = Freader.nextLine().split(",");
+                                if (SplitArr[0].equals(x.txtUsername.getText()) && SplitArr[1].equals(x.txtPassword.getText())) {
+                                    System.out.println("Login True");
+                                    FirstUser = false;
+                                    if (SplitArr[2].equals("t")) {
+                                        Tutor = true;
+                                        break;
+                                    } else {
+                                        Student = true;
+                                        FirstL = false;
+                                        break;
+                                    }
+                                } else {
+                                    System.out.println("Login False");
+                                }
+                            }
+                        } catch (IOException e1) {
+                            System.err.println("File Error");
+                        }
+                    }
                 }
             });
         }

@@ -29,6 +29,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="28"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-login.png"/>
           <text value="Login"/>
         </properties>
       </component>
@@ -40,6 +42,7 @@
         </constraints>
         <properties>
           <font name="Futura" size="28"/>
+          <icon value="assets/icons/icons8-create.png"/>
           <text value="Sign Up"/>
         </properties>
       </component>
