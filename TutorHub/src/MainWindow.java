@@ -1,7 +1,3 @@
-import com.sun.codemodel.internal.JOp;
-import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -16,6 +12,7 @@ public class MainWindow extends JFrame {
     ImWindow m = new ImWindow();
     SignUpWindow u = new SignUpWindow();
     LandingWindow l = new LandingWindow();
+    ActiveRequestsWindow ARW = new ActiveRequestsWindow();
     StudentLandingWindow sl = new StudentLandingWindow();
     SubjectWindow sj = new SubjectWindow();
     TutorWindow tl = new TutorWindow();
@@ -24,18 +21,17 @@ public class MainWindow extends JFrame {
     Boolean FirstL = true;
     Boolean FirstUser = true;
     Boolean FirstCreate = true;
-    Boolean FirstS = true;
-    Boolean FirstFail = true;
+    Boolean studentactive = false;
     SubjectWindow s = new SubjectWindow();
     Boolean Tutor = false;
     Boolean Student = false;
-    Boolean Studentactive = false;
     Tutor UserT = null;
     Student UserS = null;
     javax.swing.Timer timer;
     String Username = null;
     String UPass = null;
     String TempUsername, TempPassword, TempEmail;
+    DefaultListModel ActiveRequests = new DefaultListModel();
 
     public MainWindow() {
         setLayout(new CardLayout());
@@ -155,7 +151,13 @@ public class MainWindow extends JFrame {
         sl.btnActiveRequests.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                sl.Visible = false;
+                ARW.Visible = true;
+                remove(sl.MainPanel);
+                add(ARW.MainPanel);
+                validate();
+                pack();
+                setVisible(true);
             }
         });
         sl.btnGetHelp.addActionListener(new ActionListener() {
@@ -201,9 +203,8 @@ public class MainWindow extends JFrame {
         });
     }
 
-
     public void Update() {
-        if(Studentactive){
+        if(studentactive){
             msg.Visible = true;
             sl.Visible = false;
             remove(sl.MainPanel);

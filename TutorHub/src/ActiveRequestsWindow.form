@@ -29,7 +29,7 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
-          <text value="Button"/>
+          <text value="Return to Hub"/>
         </properties>
       </component>
       <component id="74437" class="javax.swing.JList" binding="lstRequests">
