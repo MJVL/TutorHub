@@ -158,17 +158,17 @@ public class MainWindow extends JFrame {
                 validate();
                 pack();
                 setVisible(true);
+                ActiveRequests.clear();
                     try {
                         Scanner Freader2 = new Scanner(new File("src/assets/data/questions.txt"));
                         while (Freader2.hasNextLine()) {
                             String[] SplitArr = Freader2.nextLine().split(",");
-                            System.out.println(SplitArr[0]+TempUsername);
                             if (SplitArr[0].equals(TempUsername)) {
                                 if (SplitArr[2].equals("n")) {
                                     ActiveRequests.addElement("Question: " + SplitArr[1] + ", Status: Unanswered");
                                 }
                                 else {
-                                    ActiveRequests.addElement("Question: " + SplitArr[1] + ", Status: Answered");
+                                    ActiveRequests.addElement("Question: " + SplitArr[1] + ", Status: Answered, Tutor's Answer: " + SplitArr[3]);
                                 }
 
                             }
@@ -177,6 +177,18 @@ public class MainWindow extends JFrame {
                         System.err.println("File Error");
                     }
                 ARW.lstRequests.setModel(ActiveRequests);
+            }
+        });
+        ARW.btnReturn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ARW.Visible = false;
+                sl.Visible = true;
+                remove(ARW.MainPanel);
+                add(sl.MainPanel);
+                validate();
+                pack();
+                setVisible(true);
             }
         });
         sl.btnGetHelp.addActionListener(new ActionListener() {
