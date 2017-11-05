@@ -8,7 +8,6 @@ import java.io.*;
 import java.awt.event.*;
 
 public class MainWindow extends JFrame {
-
     ImWindow m = new ImWindow();
     SignUpWindow u = new SignUpWindow();
     LandingWindow l = new LandingWindow();
@@ -239,7 +238,7 @@ public class MainWindow extends JFrame {
                 }
             }
         });
-        
+
         sj.btnForeignLanguages.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -540,6 +539,49 @@ public class MainWindow extends JFrame {
             public void actionPerformed(ActionEvent e){
                 remove (science.MainPanel);
                 openQuestionWindow("Science","Other");
+            }
+        });
+
+        history.btnEuropeanHistory.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                remove (history.MainPanel);
+                openQuestionWindow("History","European History");
+            }
+        });
+        history.btnGovernment.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                remove (history.MainPanel);
+                openQuestionWindow("History","Government");
+            }
+        });
+        history.btnHumanGeography.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                remove (history.MainPanel);
+                openQuestionWindow("History","Human Geography");
+            }
+        });
+        history.btnPsychology.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                remove (history.MainPanel);
+                openQuestionWindow("History","Psychology");
+            }
+        });
+        history.btnUSHistory.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                remove (history.MainPanel);
+                openQuestionWindow("History","US History");
+            }
+        });
+        history.btnOther.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                remove (history.MainPanel);
+                openQuestionWindow("History","Other");
             }
         });
     }
