@@ -17,6 +17,7 @@ public class MainWindow extends JFrame {
     Boolean FirstL = true;
     Boolean FirstUser = true;
     Boolean FirstS = true;
+    Boolean FirstFail = true;
     SubjectWindow s = new SubjectWindow();
     Boolean Tutor = false;
     Boolean Student = false;
@@ -73,24 +74,22 @@ public class MainWindow extends JFrame {
             x.btnLogin.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    FirstFail = true;
                     if (FirstUser) {
                         try {
                             Scanner Freader = new Scanner(new File("src/assets/data/logins.txt"));
                             while (Freader.hasNextLine()) {
                                 String[] SplitArr = Freader.nextLine().split(",");
                                 if (SplitArr[0].equals(x.txtUsername.getText()) && SplitArr[1].equals(x.txtPassword.getText())) {
-                                    System.out.println("Login True");
+                                    JOptionPane.showMessageDialog(null,"Login Successful");
                                     FirstUser = false;
                                     if (SplitArr[2].equals("t")) {
                                         Tutor = true;
                                         break;
                                     } else {
                                         Student = true;
-                                        FirstL = false;
                                         break;
                                     }
-                                } else {
-                                    System.out.println("Login False");
                                 }
                             }
                         } catch (IOException e1) {
@@ -99,6 +98,12 @@ public class MainWindow extends JFrame {
                     }
                 }
             });
+        }
+        if (FirstFail && x.Visible) {
+            x.txtUsername.setText("");
+            x.txtPassword.setText("");
+            JOptionPane.showMessageDialog(null,"Login Failed");
+            FirstFail = false;
         }
         if (Tutor) {
             JOptionPane.showMessageDialog(null,UserT.toString());
