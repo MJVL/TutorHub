@@ -5,4 +5,5 @@ public class LogInWindow {
     private JTextField textField1;
     private JTextField textField2;
     protected JPanel MainPanel;
+    protected Boolean Visible;
 }

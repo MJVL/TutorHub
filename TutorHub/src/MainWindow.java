@@ -19,6 +19,7 @@ public class MainWindow extends JFrame{
             l.btnLogin.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    l.Visible = false;
                     remove(l.MainPanel);
                     add(x.MainPanel);
                     validate();

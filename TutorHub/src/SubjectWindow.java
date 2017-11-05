@@ -11,4 +11,5 @@ public class SubjectWindow {
     private JButton btnOther;
     private JButton btnProgramming;
     private JButton btnLanguageArts;
+    protected boolean Visible;
 }
