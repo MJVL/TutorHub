@@ -9,4 +9,8 @@ public class SocialStudiesWindow {
     protected JButton btnGovernment;
     protected JButton btnOther;
     protected boolean Visible;
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+    }
 }

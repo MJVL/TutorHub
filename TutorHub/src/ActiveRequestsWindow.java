@@ -6,5 +6,6 @@ public class ActiveRequestsWindow {
     protected JList lstRequests;
     private JLabel lblTitle;
     protected JButton btnRefresh;
+    protected JScrollPane scrlMain;
     protected boolean Visible;
 }

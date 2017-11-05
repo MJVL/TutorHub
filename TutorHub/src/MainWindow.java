@@ -593,9 +593,10 @@ public class MainWindow extends JFrame {
         q.submitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                try(PrintWriter pw = new PrintWriter(new FileOutputStream(new File("Questions.txt"),true))){
-                    pw.println();
+                try(PrintWriter pw = new PrintWriter(new FileOutputStream(new File("src/assets/data/questions.txt"),true))){
+                    pw.println(UserTopic.getSubject() + "," + UserTopic.getTopic() + "," + TempUsername + "," + q.txtQuestion.getText() + ",n");
                     pw.close();
+                    JOptionPane.showMessageDialog(null,"Question Submitted");
                 } catch (FileNotFoundException e1) {
                     e1.printStackTrace();
                 }
