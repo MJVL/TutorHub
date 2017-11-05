@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Scanner;
+import java.io.*;
 import java.awt.event.*;
 
 public class MainWindow extends JFrame {
@@ -15,8 +17,8 @@ public class MainWindow extends JFrame {
     Boolean FirstL = true;
     SubjectWindow s = new SubjectWindow();
     Boolean Tutor = false;
-    Tutor UserT;
-    Student UserS;
+    Tutor UserT = null;
+    Student UserS = null;
     javax.swing.Timer timer;
 
     public MainWindow() {
@@ -71,12 +73,11 @@ public class MainWindow extends JFrame {
             });
         }
         if (Tutor) {
-            UserT = new Tutor();
-            UserT.setC(new Credentials(x.txtUsername.getText(),x.txtPassword.getText()));
             JOptionPane.showMessageDialog(null,UserT.toString());
             Tutor = false;
         }
     }
+
 
     private class MoveListener implements ActionListener {
 
