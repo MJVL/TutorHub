@@ -632,15 +632,6 @@ public class MainWindow extends JFrame {
         tl.btnAnswer.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ArrayList<String> al=new ArrayList<String>();
-                try {
-                    Scanner Freader2 = new Scanner(new File("src/assets/data/questions.txt"));
-                    while (Freader2.hasNextLine()) {
-
-                    }
-                } catch (IOException e2) {
-                    System.err.println("File Error");
-                }
                 String Answer = JOptionPane.showInputDialog("Answer");
                 linenum = tl.lstQuestions.getSelectedIndex();
                 JOptionPane.showMessageDialog(null,"Your answer was submitted.");

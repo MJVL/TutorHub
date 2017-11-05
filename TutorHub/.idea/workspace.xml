@@ -15,8 +15,8 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="638" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="638" selection-end-column="0" />
+            <state relative-caret-position="169">
+              <caret line="633" column="56" lean-forward="false" selection-start-line="633" selection-start-column="56" selection-end-line="633" selection-end-column="56" />
               <folding>
                 <element signature="class#2129:3160" expanded="false" />
                 <element signature="class#3206:3734" expanded="false" />
@@ -121,9 +121,8 @@
                 <element signature="method#actionPerformed#0;class#24223:24441" expanded="false" />
                 <element signature="class#24490:25282" expanded="false" />
                 <element signature="method#actionPerformed#0;class#24490:25282" expanded="false" />
-                <element signature="e#25477#25485#0" expanded="true" />
                 <element signature="method#Update#0;class#MainWindow#0" expanded="false" />
-                <element signature="e#26324#26338#0" expanded="false" />
+                <element signature="e#25954#25968#0" expanded="false" />
                 <element signature="method#openmeetups#0;class#MainWindow#0" expanded="false" />
                 <element signature="method#saveLogin#0;class#MainWindow#0" expanded="false" />
                 <element signature="method#savestudent#0;class#MainWindow#0" expanded="false" />
@@ -132,16 +131,6 @@
                 <element signature="class#MoveListener#0;class#MainWindow#0" expanded="false" />
                 <element signature="method#openQuestionWindow#0;class#MainWindow#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logins.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/data/logins.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -166,16 +155,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vanleeuwenm.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/data/vanleeuwenm.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TutorWindow.form" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TutorWindow.form">
           <provider selected="true" editor-type-id="ui-designer">
@@ -193,18 +172,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentLandingWindow.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StudentLandingWindow.form">
+      <file leaf-file-name="ProgrammingWindow.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ProgrammingWindow.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionWindow.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/QuestionWindow.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="e#140#141#0" expanded="true" />
+                <element signature="e#199#200#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#474#475#0" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="questions.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/assets/data/questions.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="45">
+              <caret line="3" column="59" lean-forward="false" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -248,10 +251,8 @@
         <option value="$PROJECT_DIR$/src/ForeignLanguageWindow.java" />
         <option value="$PROJECT_DIR$/src/ACTSATWindow.java" />
         <option value="$PROJECT_DIR$/src/Student.java" />
-        <option value="$PROJECT_DIR$/src/QuestionWindow.form" />
         <option value="$PROJECT_DIR$/src/Topic.java" />
         <option value="$PROJECT_DIR$/src/QuestionWindow.java" />
-        <option value="$PROJECT_DIR$/src/assets/data/questions.txt" />
         <option value="$PROJECT_DIR$/src/ActiveRequestsWindow.java" />
         <option value="$PROJECT_DIR$/src/SocialStudiesWindow.form" />
         <option value="$PROJECT_DIR$/src/ACTSATWindow.form" />
@@ -267,7 +268,9 @@
         <option value="$PROJECT_DIR$/src/StudentLandingWindow.form" />
         <option value="$PROJECT_DIR$/src/TutorWindow.form" />
         <option value="$PROJECT_DIR$/src/TutorWindow.java" />
+        <option value="$PROJECT_DIR$/src/QuestionWindow.form" />
         <option value="$PROJECT_DIR$/src/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/assets/data/questions.txt" />
       </list>
     </option>
   </component>
@@ -324,20 +327,7 @@
               <item name="TutorHub" type="b2602c69:ProjectViewProjectNode" />
               <item name="TutorHub" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TutorHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TutorHub" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="StudentLandingWindow" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="TutorHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TutorHub" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="TutorWindow" type="e9f4de52:FormNode" />
+              <item name="QuestionWindow" type="e9f4de52:FormNode" />
             </path>
           </expand>
           <select />
@@ -529,14 +519,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/data/vanleeuwenm.java" />
     <entry file="file://$PROJECT_DIR$/src/assets/data/null.txt" />
-    <entry file="file://$PROJECT_DIR$/src/AI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/data/arkoc.txt" />
     <entry file="file://$PROJECT_DIR$/src/assets/data/help.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -699,22 +681,12 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProgrammingWindow.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LanguageArtsWindow.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MathWindow.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/QuestionWindow.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
@@ -786,30 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TutorWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Questions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/data/logins.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -831,10 +779,51 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionWindow.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TutorWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProgrammingWindow.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="638" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="638" selection-end-column="0" />
+        <state relative-caret-position="169">
+          <caret line="633" column="56" lean-forward="false" selection-start-line="633" selection-start-column="56" selection-end-line="633" selection-end-column="56" />
           <folding>
             <element signature="class#2129:3160" expanded="false" />
             <element signature="class#3206:3734" expanded="false" />
@@ -939,9 +928,8 @@
             <element signature="method#actionPerformed#0;class#24223:24441" expanded="false" />
             <element signature="class#24490:25282" expanded="false" />
             <element signature="method#actionPerformed#0;class#24490:25282" expanded="false" />
-            <element signature="e#25477#25485#0" expanded="true" />
             <element signature="method#Update#0;class#MainWindow#0" expanded="false" />
-            <element signature="e#26324#26338#0" expanded="false" />
+            <element signature="e#25954#25968#0" expanded="false" />
             <element signature="method#openmeetups#0;class#MainWindow#0" expanded="false" />
             <element signature="method#saveLogin#0;class#MainWindow#0" expanded="false" />
             <element signature="method#savestudent#0;class#MainWindow#0" expanded="false" />
@@ -953,10 +941,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Questions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/data/questions.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        <state relative-caret-position="45">
+          <caret line="3" column="59" lean-forward="false" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
           <folding />
         </state>
       </provider>

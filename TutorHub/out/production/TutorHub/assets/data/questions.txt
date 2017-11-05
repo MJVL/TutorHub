@@ -1,6 +1,5 @@
 Math,Algebra 1,test,How do I factor?,n
-Science,Physics,test,How do I do physics?,y,You don't.
-Math,Algebra 1,nottest,How do I factor again?,n
-Science,Chemistry,test,what is polar,n
-Math,PreCalculus,test,what is sin,n
-ACT/SAT,ACT,test,what is 36,n
+Math,Pre-Calc,nottest,How do I find slanted asmyptotes?,n
+Science,Chemistry,test,Is H2O polars?,n
+Math,PreCalculus,test,What trig identities should I know?,n
+ACT/SAT,ACT,test,What is 36?,n
