@@ -1,2 +1,2 @@
-vanleeuwenm,5,s
-xief,5,s
+vanleeuwenm,5,michaeljvanleeuwen@gmail.com,s
+xief,5,test@sample.com,s

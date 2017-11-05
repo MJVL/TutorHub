@@ -20,6 +20,7 @@ public class MainWindow extends JFrame {
     MesageWindow msg = new MesageWindow();
     Boolean FirstL = true;
     Boolean FirstUser = true;
+    Boolean FirstCreate = true;
     Boolean FirstS = true;
     Boolean FirstFail = true;
     SubjectWindow s = new SubjectWindow();
@@ -65,7 +66,7 @@ public class MainWindow extends JFrame {
             l.btnSignup.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    if (FirstL) {
+                    if (FirstCreate) {
                         l.Visible = false;
                         u.Visible = true;
                         remove(l.MainPanel);
@@ -74,6 +75,14 @@ public class MainWindow extends JFrame {
                         pack();
                         setVisible(true);
                     }
+                }
+            });
+        }
+        if (u.Visible) {
+            u.btnSignup.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    
                 }
             });
         }
@@ -86,9 +95,9 @@ public class MainWindow extends JFrame {
                             Scanner Freader = new Scanner(new File("src/assets/data/logins.txt"));
                             while (Freader.hasNextLine()) {
                                 String[] SplitArr = Freader.nextLine().split(",");
-                                if (SplitArr[0].equals(x.txtUsername.getText()) && SplitArr[1].equals(x.txtPassword.getText())) {
+                                if (SplitArr[0].equals(x.txtUsername.getText()) && SplitArr[1].equals(x.txtPassword.getText()) || SplitArr[2].equals(x.txtUsername.getText()) && SplitArr[1].equals(x.txtPassword.getText())) {
                                     UPass = x.txtPassword.getText();
-                                    Username = x.txtUsername.getText();
+                                    Username = SplitArr[0];
                                     x.txtUsername.setText("Login Successful");
                                     x.txtPassword.setText("Login Successful");
                                     FirstUser = false;
