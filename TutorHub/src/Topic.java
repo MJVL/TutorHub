@@ -25,6 +25,6 @@ public class Topic extends Subject{
 
     //toString
     public String toString(){
-        return ("Subject: " + getSubject() + " Topic: " + myTopic);
+        return ("Subject: " + getSubject() + ", Topic: " + myTopic);
     }
 }
