@@ -34,16 +34,8 @@ public class Tutor {
         }
     }
 
-    public Credentials getC() {
-        return c;
-    }
-
     public ArrayList<Subject> getArrsub() {
         return arrsub;
-    }
-
-    public void setC(Credentials c) {
-        this.c = c;
     }
 
     public void setArrsub(ArrayList<Subject> arrsub) {
@@ -73,9 +65,9 @@ public class Tutor {
     public String toString()
     {
         String out = "";
-        out = c.toString();
+        out = hours + "," + numattended + "," + numrequested;
         for(int i = 0;i<arrsub.size();i++) {
-            out += arrsub.get(i).toString();
+            out += "," + arrsub.get(i).toString();
         }
         return out;
     }
