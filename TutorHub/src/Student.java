@@ -52,8 +52,7 @@ public class Student {
         return (numattended/numrequested*100);
     }
 
-    public String toString()
-    {
+    public String toString() {
         String out = "";
         out = numattended + "," + numrequested;
         for (int i = 0; i < arrquestion.size();i++) {
