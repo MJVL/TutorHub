@@ -109,11 +109,11 @@ public class MainWindow extends JFrame {
                             String[] SplitArr = Freader.nextLine().split(",");
                             if (SplitArr[0].equals(x.txtUsername.getText()) && SplitArr[1].equals(x.txtPassword.getText()) || SplitArr[2].equals(x.txtUsername.getText()) && SplitArr[1].equals(x.txtPassword.getText())) {
                                 UPass = x.txtPassword.getText();
-                                Username = SplitArr[0];
+                                TempUsername = SplitArr[0];
                                 FirstUser = false;
                                 if (SplitArr[3].equals("t")) {
                                     System.out.println("Tutor");
-                                    UserT = new Tutor("src/assets/data/" + Username + ".txt");
+                                    UserT = new Tutor("src/assets/data/" + TempUsername + ".txt");
                                     sl.Visible = true;
                                     x.Visible = false;
                                     remove(x.MainPanel);
@@ -126,7 +126,7 @@ public class MainWindow extends JFrame {
                                     break;
                                 } else {
                                     Student = true;
-                                    UserS = new Student("src/assets/data/" + Username + ".txt");
+                                    UserS = new Student("src/assets/data/" + TempUsername + ".txt");
                                     sl.Visible = true;
                                     x.Visible = false;
                                     remove(x.MainPanel);
@@ -158,6 +158,25 @@ public class MainWindow extends JFrame {
                 validate();
                 pack();
                 setVisible(true);
+                    try {
+                        Scanner Freader2 = new Scanner(new File("src/assets/data/questions.txt"));
+                        while (Freader2.hasNextLine()) {
+                            String[] SplitArr = Freader2.nextLine().split(",");
+                            System.out.println(SplitArr[0]+TempUsername);
+                            if (SplitArr[0].equals(TempUsername)) {
+                                if (SplitArr[2].equals("n")) {
+                                    ActiveRequests.addElement("Question: " + SplitArr[1] + ", Status: Unanswered");
+                                }
+                                else {
+                                    ActiveRequests.addElement("Question: " + SplitArr[1] + ", Status: Answered");
+                                }
+
+                            }
+                        }
+                    } catch (IOException e2) {
+                        System.err.println("File Error");
+                    }
+                ARW.lstRequests.setModel(ActiveRequests);
             }
         });
         sl.btnGetHelp.addActionListener(new ActionListener() {
