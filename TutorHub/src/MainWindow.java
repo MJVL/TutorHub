@@ -1,3 +1,4 @@
+import com.sun.codemodel.internal.JOp;
 import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
@@ -32,6 +33,7 @@ public class MainWindow extends JFrame {
     javax.swing.Timer timer;
     String Username = null;
     String UPass = null;
+    String TempUsername, TempPassword, TempEmail;
 
     public MainWindow() {
         setLayout(new CardLayout());
@@ -44,6 +46,20 @@ public class MainWindow extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         pack();
         setVisible(true);
+        u.btnSignup.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (new File("src/assets/data/" + u.txtUsername.getText() + ".txt").exists()) {
+                    JOptionPane.showMessageDialog(null,"Username is taken.");
+                    u.txtPassword.setText("");
+                    u.txtEmail.setText("");
+                    u.txtUsername.setText("");
+                }
+                else {
+                    JOptionPane.showMessageDialog(null,"Account created successfully.");
+                }
+            }
+        });
     }
 
     public void Update() {
@@ -79,12 +95,6 @@ public class MainWindow extends JFrame {
             });
         }
         if (u.Visible) {
-            u.btnSignup.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    
-                }
-            });
         }
         if (x.Visible) {
             x.btnLogin.addActionListener(new ActionListener() {
