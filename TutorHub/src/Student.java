@@ -2,23 +2,21 @@ import java.util.ArrayList;
 import java.io.*;
 
 public class Student {
-
-    private Credentials c;
-    private ArrayList<Subject> arrsub = new ArrayList<Subject>();
+    private ArrayList<Question> arrquestion = new ArrayList<Question>();
     private int numrequested, numattended;
 
     public Student() {
-        c = new Credentials();
+        arrquestion = new ArrayList<Question>();
+        numrequested = 0;
+        numattended = 0;
     }
 
     public Student(String path){
-        String arrin[] = new String[100];
-        int i=0;
+        String arrin = "";
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             String line;
             while ((line = br.readLine()) != null) {
-                arrin[i] = line;
-                i++;
+                arrin = line;
             }
             br.close();
         } catch (FileNotFoundException e) {
@@ -26,25 +24,13 @@ public class Student {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        String parts[] = arrin.split(",");
+        numattended = Integer.valueOf(parts[0]);
+        numrequested = Integer.valueOf(parts[1]);
+        for(int i = 2;i<parts.length;i++){
+            arrquestion.add(new Question(parts[i]));
+        }
     }
-
-    public Credentials getC() {
-        return c;
-    }
-
-    public ArrayList<Subject> getArrsub() {
-        return arrsub;
-    }
-
-    public void setArrsub(ArrayList<Subject> arrsub) {
-        this.arrsub = arrsub;
-    }
-
-    public void setC(Credentials c) {
-        this.c = c;
-    }
-
     public int getNumrequested(){
         return numrequested;
     }
@@ -68,9 +54,9 @@ public class Student {
     public String toString()
     {
         String out = "";
-        out = c.toString() + "," + numattended + "," + numrequested;
-        for (int i = 0; i < arrsub.size();i++) {
-            out += "," + arrsub.get(i).toString();
+        out = numattended + "," + numrequested;
+        for (int i = 0; i < arrquestion.size();i++) {
+            out += "," + arrquestion.get(i).toString();
         }
         return out;
     }
