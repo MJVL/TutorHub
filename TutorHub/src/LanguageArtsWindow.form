@@ -25,6 +25,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-pencil.png"/>
           <text value="Composition"/>
         </properties>
       </component>
@@ -34,6 +36,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-podium-filled.png"/>
           <text value="Seminar"/>
         </properties>
       </component>
@@ -43,6 +47,9 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-book-filled.png"/>
           <text value="Literature"/>
         </properties>
       </component>
@@ -52,6 +59,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-book.png"/>
           <text value="Other"/>
         </properties>
       </component>
