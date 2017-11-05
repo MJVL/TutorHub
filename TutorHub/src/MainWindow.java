@@ -280,7 +280,7 @@ public class MainWindow extends JFrame {
 
     public void savemeetings(String paths, ArrayList<Meetup> arrmeetings){
         try(PrintWriter out = new PrintWriter(new File(paths))){
-            for(int i = 0;i<arrmeetings.size();i++){
+            for(int i = 0;i<arrmeetings.size();i++) {
                 out.println(arrmeetings.get(i).toString());
             }
             out.close();
