@@ -29,7 +29,7 @@ public class AI {
             String arrcomwords[] = arrallquestions.get(x).getQuestion().split(" ");
             count = 0;
             for(int y = 0;y<arrcomwords.length;y++){
-                if(arrwords[x].equals(arrcomwords[y])){
+                if(arrwords[x].equals(arrcomwords[y]) && arrallquestions.get(x).getMyAnswer()!= ""){
                     count++;
                 }
             }
