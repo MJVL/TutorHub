@@ -1,7 +1,8 @@
 import javax.swing.*;
+import java.io.*;
 import java.util.ArrayList;
 
-public class ImageProcessing {
+public class ImageProcessing{
     private ImageIcon imgproblem = new ImageIcon();
     private String question = "";
     private ArrayList<Question> arrallquestion = new ArrayList<Question>();
@@ -34,6 +35,16 @@ public class ImageProcessing {
 
     public void setImgproblem(ImageIcon imgproblem){
         this.imgproblem = imgproblem;
+    }
+
+    public void something()throws IOException{
+        String command[] = new String[3];
+        command[0] = "cmd /c start C:/Users/Arko/Documents/tesseract.exe";
+        command[1] = "cmd /c start C:/Users/Arko/Documents/microquestion.JPG";
+        command[2] = "cmd /c start C:/Users/Arko/Documents/tesseractout.txt";
+        for(int i = 0;i<3;i++){
+            Process child = Runtime.getRuntime().exec(command[i]);
+        }
     }
 
     public Question getsimilaranswer(){
