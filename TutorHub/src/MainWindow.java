@@ -199,7 +199,7 @@ public class MainWindow extends JFrame {
     }
 
     public void savetutor(String path, Tutor t){
-        try(PrintWriter out = new PrintWriter()){
+        try(PrintWriter out = new PrintWriter(new File(path))){
             out.println(t.toString());
             out.close();
         }catch(FileNotFoundException e1){
@@ -208,7 +208,7 @@ public class MainWindow extends JFrame {
     }
 
     public void savemeetings(String paths, ArrayList<Meetup> arrmeetings){
-        try(PrintWriter out = new PrintWriter()){
+        try(PrintWriter out = new PrintWriter(new File(paths))){
             for(int i = 0;i<arrmeetings.size();i++){
                 out.println(arrmeetings.get(i).toString());
             }

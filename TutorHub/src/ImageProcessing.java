@@ -6,16 +6,16 @@ import java.util.List;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 
-import org.opencv.core.*;
-import org.opencv.highgui.Highgui;
-import org.opencv.imgproc.*;
+//import org.opencv.core.*;
+//import org.opencv.highgui.Highgui;
+//import org.opencv.imgproc.*;
 
 public class ImageProcessing {
     private ImageIcon imgquestion = new ImageIcon();
 
     public ImageProcessing(){
         imgquestion = new ImageIcon();
-        System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+        //System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
         
     }
 
