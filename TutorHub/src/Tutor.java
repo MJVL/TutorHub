@@ -1,13 +1,37 @@
 import java.util.ArrayList;
+import java.io.*;
 
 public class Tutor {
-    private Credentials c;
     private ArrayList<Subject> arrsub = new ArrayList<Subject>();
-    private int numrequested, numattended;
+    private int numrequested, numattended, hours;
 
     public Tutor() {
-        c = new Credentials();
         arrsub = new ArrayList<Subject>();
+        hours = 0;
+        numrequested = 0;
+        numattended = 0;
+    }
+
+    public Tutor(String path){
+        String arrin = "";
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                arrin = line;
+            }
+            br.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String parts[] = arrin.split(",");
+        hours = Integer.valueOf(parts[0]);
+        numattended = Integer.valueOf(parts[1]);
+        numrequested = Integer.valueOf(parts[2]);
+        for(int x = 3;x<parts.length;x++){
+            arrsub.add(new Subject(parts[x]));
+        }
     }
 
     public Credentials getC() {
