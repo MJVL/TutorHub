@@ -2,12 +2,13 @@ import javax.swing.*;
 
 public class Question {
 
-    String myQuestion;
+    String myQuestion, myAnswer;
     ImageIcon myImage;
 
     public Question() {
         myQuestion = null;
         myImage = null;
+        myAnswer = null;
     }
 
     public Question(String myQuestion) {
@@ -33,6 +34,14 @@ public class Question {
 
     public ImageIcon getImage() {
         return myImage;
+    }
+
+    public String getMyAnswer() {
+        return myAnswer;
+    }
+
+    public void setMyAnswer(String myAnswer) {
+        this.myAnswer = myAnswer;
     }
 
     public String toString() {

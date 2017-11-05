@@ -1,3 +1,4 @@
+import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 import javax.swing.*;
@@ -15,6 +16,7 @@ public class MainWindow extends JFrame {
     LandingWindow l = new LandingWindow();
     StudentLandingWindow sl = new StudentLandingWindow();
     LogInWindow x = new LogInWindow();
+    MesageWindow msg = new MesageWindow();
     Boolean FirstL = true;
     Boolean FirstUser = true;
     Boolean FirstS = true;
@@ -22,9 +24,12 @@ public class MainWindow extends JFrame {
     SubjectWindow s = new SubjectWindow();
     Boolean Tutor = false;
     Boolean Student = false;
+    Boolean Studentactive = false;
     Tutor UserT = null;
     Student UserS = null;
     javax.swing.Timer timer;
+    String Username = null;
+    String UPass = null;
 
     public MainWindow() {
         setLayout(new CardLayout());
@@ -81,6 +86,8 @@ public class MainWindow extends JFrame {
                             while (Freader.hasNextLine()) {
                                 String[] SplitArr = Freader.nextLine().split(",");
                                 if (SplitArr[0].equals(x.txtUsername.getText()) && SplitArr[1].equals(x.txtPassword.getText())) {
+                                    UPass = x.txtPassword.getText();
+                                    Username = x.txtUsername.getText();
                                     x.txtUsername.setText("Login Successful");
                                     x.txtPassword.setText("Login Successful");
                                     FirstUser = false;
@@ -105,6 +112,7 @@ public class MainWindow extends JFrame {
             });
         }
         if (Student) {
+            UserS = new Student("src/assets/data/"+Username+".txt");
             sl.Visible = true;
             x.Visible = false;
             remove(x.MainPanel);
@@ -112,6 +120,28 @@ public class MainWindow extends JFrame {
             validate();
             pack();
             setVisible(true);
+            sl.btnActiveRequests.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+
+                }
+            });
+            sl.btnGetHelp.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+
+                }
+            });
+        }
+        if(Studentactive){
+            msg.Visible = true;
+            sl.Visible = false;
+            remove(sl.MainPanel);
+            add(msg.MainPanel);
+            validate();
+            pack();
+            setVisible(true);
+            
         }
         //if (Tutor) {
       //      JOptionPane.showMessageDialog(null,UserT.toString());
