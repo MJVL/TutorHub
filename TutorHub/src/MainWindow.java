@@ -171,11 +171,15 @@ public class MainWindow extends JFrame {
                     Scanner Freader2 = new Scanner(new File("src/assets/data/questions.txt"));
                     while (Freader2.hasNextLine()) {
                         String[] SplitArr = Freader2.nextLine().split(",");
-                        if (SplitArr[0].equals(TempUsername)) {
-                            if (SplitArr[2].equals("n")) {
-                                ActiveRequests.addElement("Question: " + SplitArr[1] + ", Status: Unanswered");
+                        if (SplitArr[2].equals(TempUsername)) {
+                            UserTopic = new Topic(SplitArr[0],SplitArr[1]);
+                            ActiveRequests.addElement(UserTopic.toString());
+                            if (SplitArr[4].equals("n")) {
+                                ActiveRequests.addElement("Question: " + SplitArr[3]);
+                                ActiveRequests.addElement("Answer: None, unanswered.");
                             } else {
-                                ActiveRequests.addElement("Question: " + SplitArr[1] + ", Status: Answered, Tutor's Answer: " + SplitArr[3]);
+                                ActiveRequests.addElement("Question: " + SplitArr[3]);
+                                ActiveRequests.addElement("Answer: " + SplitArr[5]);
                             }
 
                         }
@@ -583,6 +587,18 @@ public class MainWindow extends JFrame {
             public void actionPerformed(ActionEvent e){
                 remove (history.MainPanel);
                 openQuestionWindow("History","Other");
+            }
+        });
+
+        q.submitButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try(PrintWriter pw = new PrintWriter(new FileOutputStream(new File("Questions.txt"),true))){
+                    pw.println();
+                    pw.close();
+                } catch (FileNotFoundException e1) {
+                    e1.printStackTrace();
+                }
             }
         });
     }

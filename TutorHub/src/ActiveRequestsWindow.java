@@ -5,5 +5,6 @@ public class ActiveRequestsWindow {
     protected JButton btnReturn;
     protected JList lstRequests;
     private JLabel lblTitle;
+    protected JButton btnRefresh;
     protected boolean Visible;
 }
