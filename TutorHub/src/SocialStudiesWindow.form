@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="523" height="400"/>
     </constraints>
     <properties>
       <background color="-14405306"/>
@@ -25,6 +25,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-globe.png"/>
           <text value="Human Geography"/>
         </properties>
       </component>
@@ -34,6 +36,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-america-filled.png"/>
           <text value="US History"/>
         </properties>
       </component>
@@ -43,6 +47,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-europe-filled.png"/>
           <text value="European History"/>
         </properties>
       </component>
@@ -52,6 +58,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="11"/>
+          <icon value="assets/icons/icons8-brain-filled.png"/>
           <text value="Psychology"/>
         </properties>
       </component>
@@ -61,6 +69,7 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <icon value="assets/icons/icons8-parliament.png"/>
           <text value="Government"/>
         </properties>
       </component>
@@ -70,6 +79,7 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <icon value="assets/icons/icons8-ellipsis.png"/>
           <text value="Other"/>
         </properties>
       </component>
