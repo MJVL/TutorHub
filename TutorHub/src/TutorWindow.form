@@ -10,15 +10,6 @@
     </properties>
     <border type="none"/>
     <children>
-      <component id="af4f6" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <font name="Futura" size="24" style="1"/>
-          <text value="Tutor Hub"/>
-        </properties>
-      </component>
       <component id="310b7" class="javax.swing.JLabel">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -84,6 +75,22 @@
           <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties/>
+      </component>
+      <component id="19b1b" class="javax.swing.JLabel" binding="lblTitle">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="150"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14405306"/>
+          <enabled value="true"/>
+          <font name="Futura" size="28"/>
+          <foreground color="-1"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="TutorHub"/>
+        </properties>
       </component>
     </children>
   </grid>

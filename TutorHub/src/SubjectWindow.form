@@ -15,7 +15,7 @@
           <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <font name="Century Gothic" size="48" style="1"/>
+          <font name="Futura" size="48"/>
           <foreground color="-1"/>
           <text value="I Need Help With:"/>
         </properties>
@@ -28,7 +28,7 @@
           </grid>
         </constraints>
         <properties>
-          <font name="Century Gothic" size="22"/>
+          <font name="Futura" size="24"/>
           <hideActionText value="false"/>
           <horizontalTextPosition value="10"/>
           <icon value="assets/icons/icons8-math.png"/>
@@ -43,7 +43,7 @@
           </grid>
         </constraints>
         <properties>
-          <font name="Century Gothic" size="22"/>
+          <font name="Futura" size="24"/>
           <horizontalTextPosition value="10"/>
           <icon value="assets/icons/icons8-globe-earth.png"/>
           <text value="Social Studies"/>
@@ -57,7 +57,7 @@
           </grid>
         </constraints>
         <properties>
-          <font name="Century Gothic" size="22"/>
+          <font name="Futura" size="24"/>
           <horizontalTextPosition value="10"/>
           <icon value="assets/icons/icons8-language.png"/>
           <text value="Foreign Languages"/>
@@ -71,7 +71,7 @@
           </grid>
         </constraints>
         <properties>
-          <font name="Century Gothic" size="22"/>
+          <font name="Futura" size="24"/>
           <horizontalTextPosition value="10"/>
           <icon value="assets/icons/icons8-pencil.png"/>
           <text value="ACT/SAT"/>
@@ -85,7 +85,7 @@
           </grid>
         </constraints>
         <properties>
-          <font name="Century Gothic" size="22"/>
+          <font name="Futura" size="24"/>
           <icon value="assets/icons/icons8-ellipsis.png"/>
           <text value="Other"/>
         </properties>
@@ -98,7 +98,7 @@
           </grid>
         </constraints>
         <properties>
-          <font name="Century Gothic" size="22"/>
+          <font name="Futura" size="24"/>
           <icon value="assets/icons/icons8-code.png"/>
           <text value="Programming"/>
         </properties>
@@ -111,7 +111,7 @@
           </grid>
         </constraints>
         <properties>
-          <font name="Century Gothic" size="22"/>
+          <font name="Futura" size="24"/>
           <icon value="assets/icons/icons8-book.png"/>
           <text value="Language Arts"/>
         </properties>
@@ -124,7 +124,7 @@
           </grid>
         </constraints>
         <properties>
-          <font name="Century Gothic" size="22"/>
+          <font name="Futura" size="24"/>
           <icon value="assets/icons/icons8-dna-helix.png"/>
           <text value="Science"/>
         </properties>
