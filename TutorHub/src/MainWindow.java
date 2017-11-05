@@ -56,6 +56,14 @@ public class MainWindow extends JFrame {
                     u.txtUsername.setText("");
                 }
                 else {
+                    u.Visible = false;
+                    m.Visible = true;
+                    remove(u.MainPanel);
+                    add(m.MainPanel);
+                    validate();
+                    pack();
+                    setVisible(true);
+                    FirstL = false;
                     JOptionPane.showMessageDialog(null,"Account created successfully.");
                 }
             }
