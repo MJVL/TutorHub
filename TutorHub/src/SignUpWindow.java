@@ -1,11 +1,14 @@
 import javax.swing.*;
 
 public class SignUpWindow {
-    private JTextField textField1;
-    private JTextField textField2;
-    private JTextField textField3;
+    private JTextField txtEmail;
+    private JTextField txtUsername;
+    private JTextField txtPassword;
     protected JPanel MainPanel;
     protected Boolean Visible;
-    private JButton button1;
+    private JButton btnSignup;
+    private JLabel lblEmail;
+    private JLabel lblUsername;
+    private JLabel lblPassword;
 
 }
