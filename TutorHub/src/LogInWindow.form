@@ -13,7 +13,7 @@
       <component id="cb6f4" class="javax.swing.JTextField" binding="txtUsername">
         <constraints>
           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="250" height="-1"/>
+            <preferred-size width="500" height="75"/>
           </grid>
         </constraints>
         <properties>
@@ -24,7 +24,7 @@
       <component id="99584" class="javax.swing.JTextField" binding="txtPassword">
         <constraints>
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="250" height="-1"/>
+            <preferred-size width="500" height="75"/>
           </grid>
         </constraints>
         <properties>
@@ -34,27 +34,35 @@
       </component>
       <component id="e7e91" class="javax.swing.JLabel" binding="lblEmail">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="100"/>
+          </grid>
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
           <foreground color="-1"/>
+          <horizontalAlignment value="4"/>
           <text value="Username or Email:"/>
         </properties>
       </component>
       <component id="73ce7" class="javax.swing.JLabel">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="100"/>
+          </grid>
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
           <foreground color="-1"/>
+          <horizontalAlignment value="4"/>
           <text value="Password:"/>
         </properties>
       </component>
       <component id="36a27" class="javax.swing.JButton" binding="btnLogin">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="500" height="100"/>
+          </grid>
         </constraints>
         <properties>
           <font name="Futura" size="36"/>
