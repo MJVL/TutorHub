@@ -25,6 +25,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-china.png"/>
           <text value="Mandarin"/>
         </properties>
       </component>
@@ -34,6 +36,9 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-france.png"/>
           <text value="French"/>
         </properties>
       </component>
@@ -43,6 +48,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-spain.png"/>
           <text value="Spanish"/>
         </properties>
       </component>
@@ -52,6 +59,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-germany.png"/>
           <text value="German"/>
         </properties>
       </component>
@@ -61,6 +70,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-portugal.png"/>
           <text value="Portuguese"/>
         </properties>
       </component>
@@ -70,6 +81,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-language.png"/>
           <text value="Other"/>
         </properties>
       </component>
