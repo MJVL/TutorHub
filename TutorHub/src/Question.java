@@ -13,6 +13,8 @@ public class Question {
 
     public Question(String myQuestion) {
         this.myQuestion = myQuestion;
+        myImage = null;
+        myAnswer = null;
     }
 
     public Question(String myQuestion, ImageIcon myImage) {

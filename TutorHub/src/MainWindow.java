@@ -76,13 +76,30 @@ public class MainWindow extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 saveLogin("src/assets/data/logins.txt",'s');
+                UserS = new Student();
+                savestudent("src/assets/data/" + TempUsername + ".txt", UserS);
+                m.Visible = false;
+                x.Visible = true;
+                remove(m.MainPanel);
+                add(x.MainPanel);
+                validate();
+                pack();
+                setVisible(true);
             }
         });
         m.btnTutor.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 saveLogin("src/assets/data/logins.txt",'t');
-                System.out.println("Saved");
+                UserT = new Tutor();
+                savetutor("src/assets/data" + TempUsername + ".txt", UserT);
+                m.Visible = false;
+                x.Visible = true;
+                remove(m.MainPanel);
+                add(x.MainPanel);
+                validate();
+                pack();
+                setVisible(true);
             }
         });
         x.btnLogin.addActionListener(new ActionListener() {
@@ -96,13 +113,31 @@ public class MainWindow extends JFrame {
                             if (SplitArr[0].equals(x.txtUsername.getText()) && SplitArr[1].equals(x.txtPassword.getText()) || SplitArr[2].equals(x.txtUsername.getText()) && SplitArr[1].equals(x.txtPassword.getText())) {
                                 UPass = x.txtPassword.getText();
                                 Username = SplitArr[0];
-                                JOptionPane.showMessageDialog(null,"Login Successful");
                                 FirstUser = false;
                                 if (SplitArr[3].equals("t")) {
+                                    System.out.println("Tutor");
+                                    UserT = new Tutor("src/assets/data/" + Username + ".txt");
+                                    sl.Visible = true;
+                                    x.Visible = false;
+                                    remove(x.MainPanel);
+                                    add(tl.MainPanel);
+                                    validate();
+                                    pack();
+                                    setVisible(true);
                                     Tutor = true;
+                                    JOptionPane.showMessageDialog(null,"Login Successful");
                                     break;
                                 } else {
                                     Student = true;
+                                    UserS = new Student("src/assets/data/" + Username + ".txt");
+                                    sl.Visible = true;
+                                    x.Visible = false;
+                                    remove(x.MainPanel);
+                                    add(sl.MainPanel);
+                                    validate();
+                                    pack();
+                                    setVisible(true);
+                                    JOptionPane.showMessageDialog(null,"Login Successful");
                                     break;
                                 }
                             }
@@ -114,6 +149,18 @@ public class MainWindow extends JFrame {
                         System.err.println("File Error");
                     }
                 }
+            }
+        });
+        sl.btnActiveRequests.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        sl.btnGetHelp.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
             }
         });
         l.btnLogin.addActionListener(new ActionListener() {
@@ -149,65 +196,6 @@ public class MainWindow extends JFrame {
 
 
     public void Update() {
-        if (l.Visible) {
-        }
-        if (u.Visible) {
-        }
-        if (x.Visible) {
-            x.btnLogin.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    if (FirstUser) {
-                        try {
-                            Scanner Freader = new Scanner(new File("src/assets/data/logins.txt"));
-                            while (Freader.hasNextLine()) {
-                                String[] SplitArr = Freader.nextLine().split(",");
-                                if (SplitArr[0].equals(x.txtUsername.getText()) && SplitArr[1].equals(x.txtPassword.getText()) || SplitArr[2].equals(x.txtUsername.getText()) && SplitArr[1].equals(x.txtPassword.getText())) {
-                                    UPass = x.txtPassword.getText();
-                                    Username = SplitArr[0];
-                                    JOptionPane.showMessageDialog(null,"Login Successful");
-                                    FirstUser = false;
-                                    if (SplitArr[3].equals("t")) {
-                                        Tutor = true;
-                                        break;
-                                    } else {
-                                        Student = true;
-                                        break;
-                                    }
-                                }
-                            }
-                            if (!Tutor && !Student) {
-                                JOptionPane.showMessageDialog(null,"Failed");
-                            }
-                        } catch (IOException e1) {
-                            System.err.println("File Error");
-                        }
-                    }
-                }
-            });
-        }
-        if (Student) {
-            UserS = new Student("src/assets/data/"+Username+".txt");
-            sl.Visible = true;
-            x.Visible = false;
-            remove(x.MainPanel);
-            add(sl.MainPanel);
-            validate();
-            pack();
-            setVisible(true);
-            sl.btnActiveRequests.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-
-                }
-            });
-            sl.btnGetHelp.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-
-                }
-            });
-        }
         if(Studentactive){
             msg.Visible = true;
             sl.Visible = false;
@@ -282,9 +270,9 @@ public class MainWindow extends JFrame {
     }
 
     public void savetutor(String path, Tutor t){
-        try(PrintWriter pw = new PrintWriter(new FileOutputStream(new File(path),true))){
-            pw.println(t.toString());
-            pw.close();
+        try(PrintWriter out = new PrintWriter(path)  ){
+            out.println(t.toString());
+            out.close();
         }catch(FileNotFoundException e1){
             e1.printStackTrace();
         }

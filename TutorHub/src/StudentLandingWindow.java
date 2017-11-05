@@ -6,4 +6,5 @@ public class StudentLandingWindow {
     protected JButton btnGetHelp;
     private JLabel lblEmail;
     protected boolean Visible;
+
 }
