@@ -1,15 +1,15 @@
 import javax.swing.*;
 
 public class SubjectWindow {
-    protected JPanel MainGUI;
-    private JButton btnMath;
-    private JLabel lblTitle;
-    private JButton btnScience;
-    private JButton btnSocialStudies;
-    private JButton btnForeignLanguages;
-    private JButton btnTesting;
-    private JButton btnOther;
-    private JButton btnProgramming;
-    private JButton btnLanguageArts;
+    protected JPanel MainPanel;
+    protected JButton btnMath;
+    protected JLabel lblTitle;
+    protected JButton btnScience;
+    protected JButton btnSocialStudies;
+    protected JButton btnForeignLanguages;
+    protected JButton btnTesting;
+    protected JButton btnOther;
+    protected JButton btnProgramming;
+    protected JButton btnLanguageArts;
     protected boolean Visible;
 }
