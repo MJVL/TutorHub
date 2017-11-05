@@ -10,16 +10,6 @@
     </properties>
     <border type="none"/>
     <children>
-      <component id="c8e69" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <enabled value="true"/>
-          <font name="Futura" size="48" style="1"/>
-          <text value="I Need Help With: "/>
-        </properties>
-      </component>
       <component id="4deee" class="javax.swing.JButton" binding="btnACT">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -41,6 +31,16 @@
           <horizontalTextPosition value="11"/>
           <icon value="assets/icons/icons8-s.png"/>
           <text value="SAT"/>
+        </properties>
+      </component>
+      <component id="e828c" class="javax.swing.JLabel" binding="lblTitle">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Futura" size="48"/>
+          <foreground color="-1"/>
+          <text value="I Need Help With:"/>
         </properties>
       </component>
     </children>
