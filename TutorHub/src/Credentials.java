@@ -2,13 +2,15 @@ public class Credentials {
 
     private String myUsername;
     private String myPassword;
+    private String myEmail;
 
     public Credentials(){       //default constructor
-        myUsername = myPassword = "";
+        myUsername = myPassword = myEmail = "";
     }
-    public Credentials(String username, String password){       //fill constructor
+    public Credentials(String username, String password, String email){       //fill constructor
         myUsername = username;
         myPassword = password;
+        myEmail = email;
     }
 
     //sets
@@ -18,6 +20,7 @@ public class Credentials {
     public void setMyPassword(String password){
         myPassword = password;
     }
+    public void setMyEmail(String email){ myEmail = email; }
 
     //gets
     public String getMyUsername(){
@@ -26,9 +29,10 @@ public class Credentials {
     public String getMyPassword(){
         return myPassword;
     }
+    public String getMyEmail() { return myEmail; }
 
     //tostring
     public String toString(){
-        return ("Username: " + myUsername + "Password: " + myPassword);
+        return ("Email: " + myEmail + " Username: " + myUsername + "Password: " + myPassword);
     }
 }
