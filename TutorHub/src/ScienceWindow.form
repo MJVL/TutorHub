@@ -25,6 +25,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-test-tube-filled.png"/>
           <text value="Chemistry"/>
         </properties>
       </component>
@@ -34,6 +36,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-x-ray-filled.png"/>
           <text value="Anatomy"/>
         </properties>
       </component>
@@ -43,6 +47,7 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <icon value="assets/icons/icons8-dna-helix.png"/>
           <text value="Biology"/>
         </properties>
       </component>
@@ -52,6 +57,7 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <icon value="assets/icons/icons8-detective.png"/>
           <text value="Forensics"/>
         </properties>
       </component>
@@ -61,6 +67,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-well.png"/>
           <text value="Physics"/>
         </properties>
       </component>
@@ -70,6 +78,7 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <icon value="assets/icons/icons8-ellipsis.png"/>
           <text value="Other"/>
         </properties>
       </component>
