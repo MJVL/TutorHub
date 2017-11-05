@@ -1,41 +1,52 @@
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.imageio.ImageIO;
 import javax.swing.*;
-
-//import org.opencv.core.*;
-//import org.opencv.highgui.Highgui;
-//import org.opencv.imgproc.*;
+import java.util.ArrayList;
 
 public class ImageProcessing {
-    private ImageIcon imgquestion = new ImageIcon();
+    private ImageIcon imgproblem = new ImageIcon();
+    private String question = "";
+    private ArrayList<Question> arrallquestion = new ArrayList<Question>();
 
     public ImageProcessing(){
-        imgquestion = new ImageIcon();
-        //System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
-        
+        imgproblem = new ImageIcon();
+        question = "";
+        arrallquestion = new ArrayList<Question>();
     }
 
-    public ImageProcessing(ImageIcon imgquestion){
-        this.imgquestion = imgquestion;
+    public ArrayList<Question> getArrallquestion() {
+        return arrallquestion;
     }
 
-    public ImageIcon getImgquestion(){
-        return imgquestion;
+    public void setArrallquestion(ArrayList<Question> arrallquestion) {
+        this.arrallquestion = arrallquestion;
     }
 
-    public void setImgquestion(ImageIcon imgquestion) {
-        this.imgquestion = imgquestion;
+    public ImageIcon getImgproblem() {
+        return imgproblem;
     }
 
+    public String getQuestion() {
+        return question;
+    }
 
+    public void setQuestion(String question) {
+        this.question = question;
+    }
 
-    public String textquestion(){
-        String txtquestion = "";
+    public void setImgproblem(ImageIcon imgproblem){
+        this.imgproblem = imgproblem;
+    }
 
-        return txtquestion;
+    public Question getsimilaranswer(){
+        AI result = new AI();
+        Question ans = new Question();
+        result.setArrallquestions(arrallquestion);
+        ans = result.findsimilarquestion(new Question(question));
+        return ans;
+    }
+
+    public String toString(){
+        String out = "";
+        out = question;
+        return out;
     }
 }
