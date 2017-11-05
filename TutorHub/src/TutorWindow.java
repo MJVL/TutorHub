@@ -1,9 +1,10 @@
 import javax.swing.*;
 
 public class TutorWindow {
-    private JList lstQuestions;
-    private JPanel panel1;
-    private JList lstSubjects;
-    private JList lstRequests;
-    private JComboBox cboxAddSubject;
+    protected JPanel MainPanel;
+    protected JList lstQuestions;
+    protected JList lstEvents;
+    protected JList lstSubjects;
+    protected JComboBox cboxAddSubject;
+    protected boolean Visible;
 }
