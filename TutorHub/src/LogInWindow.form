@@ -32,36 +32,34 @@
           <font name="Futura" size="24"/>
         </properties>
       </component>
-      <component id="ab32b" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <enabled value="false"/>
-          <font name="Futura" size="24"/>
-          <foreground color="-1"/>
-          <text value="Username or Email:"/>
-        </properties>
-      </component>
-      <component id="aa4cc" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <enabled value="false"/>
-          <font name="Futura" size="24"/>
-          <foreground color="-1"/>
-          <text value="Password:"/>
-        </properties>
-      </component>
       <component id="36a27" class="javax.swing.JButton" binding="btnLogin">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <font name="Futura" size="48"/>
+          <font name="Futura" size="36"/>
           <hideActionText value="false"/>
           <text value="Login"/>
+        </properties>
+      </component>
+      <component id="e7e91" class="javax.swing.JLabel" binding="lblEmail">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Futura" size="24"/>
+          <foreground color="-1"/>
+          <text value="Username or Email:"/>
+        </properties>
+      </component>
+      <component id="73ce7" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Futura" size="24"/>
+          <foreground color="-1"/>
+          <text value="Password:"/>
         </properties>
       </component>
     </children>
