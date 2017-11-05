@@ -12,7 +12,9 @@
     <children>
       <component id="10dcc" class="javax.swing.JButton" binding="btnActiveRequests">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="400" height="100"/>
+          </grid>
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
@@ -21,17 +23,22 @@
       </component>
       <component id="c32d6" class="javax.swing.JLabel" binding="lblEmail">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="1" use-parent-layout="false">
+            <preferred-size width="400" height="200"/>
+          </grid>
         </constraints>
         <properties>
           <font name="Futura" size="48"/>
           <foreground color="-1"/>
+          <horizontalAlignment value="0"/>
           <text value="Student Hub"/>
         </properties>
       </component>
       <component id="dc114" class="javax.swing.JButton" binding="btnGetHelp">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="400" height="100"/>
+          </grid>
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
