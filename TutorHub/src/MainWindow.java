@@ -92,7 +92,7 @@ public class MainWindow extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 saveLogin("src/assets/data/logins.txt",'t');
                 UserT = new Tutor();
-                savetutor("src/assets/data" + TempUsername + ".txt", UserT);
+                savetutor("src/assets/data/" + TempUsername + ".txt", UserT);
                 m.Visible = false;
                 x.Visible = true;
                 remove(m.MainPanel);
@@ -261,7 +261,7 @@ public class MainWindow extends JFrame {
     }
 
     public void savestudent(String path, Student s){
-        try(PrintWriter out = new PrintWriter(path)  ){
+        try(PrintWriter out = new PrintWriter(new File(path))  ){
             out.println(s.toString());
             out.close();
         } catch (FileNotFoundException e1) {
@@ -270,7 +270,7 @@ public class MainWindow extends JFrame {
     }
 
     public void savetutor(String path, Tutor t){
-        try(PrintWriter out = new PrintWriter(path)  ){
+        try(PrintWriter out = new PrintWriter(new File(path))  ){
             out.println(t.toString());
             out.close();
         }catch(FileNotFoundException e1){
