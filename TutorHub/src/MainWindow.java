@@ -17,6 +17,7 @@ public class MainWindow extends JFrame {
     SignUpWindow u = new SignUpWindow();
     LandingWindow l = new LandingWindow();
     StudentLandingWindow sl = new StudentLandingWindow();
+    SubjectWindow sj = new SubjectWindow();
     TutorWindow tl = new TutorWindow();
     LogInWindow x = new LogInWindow();
     MesageWindow msg = new MesageWindow();
@@ -160,7 +161,13 @@ public class MainWindow extends JFrame {
         sl.btnGetHelp.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                sl.Visible = false;
+                sj.Visible = true;
+                remove(sl.MainPanel);
+                add(sj.MainPanel);
+                validate();
+                pack();
+                setVisible(true);
             }
         });
         l.btnLogin.addActionListener(new ActionListener() {
