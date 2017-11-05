@@ -76,13 +76,30 @@ public class MainWindow extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 saveLogin("src/assets/data/logins.txt",'s');
+                UserS = new Student();
+                savestudent("src/assets/data/" + TempUsername + ".txt", UserS);
+                m.Visible = false;
+                x.Visible = true;
+                remove(m.MainPanel);
+                add(x.MainPanel);
+                validate();
+                pack();
+                setVisible(true);
             }
         });
         m.btnTutor.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 saveLogin("src/assets/data/logins.txt",'t');
-                System.out.println("Saved");
+                UserT = new Tutor();
+                savetutor("src/assets/data" + TempUsername + ".txt", UserT);
+                m.Visible = false;
+                x.Visible = true;
+                remove(m.MainPanel);
+                add(x.MainPanel);
+                validate();
+                pack();
+                setVisible(true);
             }
         });
         x.btnLogin.addActionListener(new ActionListener() {
@@ -98,14 +115,21 @@ public class MainWindow extends JFrame {
                                 Username = SplitArr[0];
                                 FirstUser = false;
                                 if (SplitArr[3].equals("t")) {
-                                    System.out.println("tutor");
+                                    System.out.println("Tutor");
+                                    UserT = new Tutor("src/assets/data/" + Username + ".txt");
+                                    sl.Visible = true;
+                                    x.Visible = false;
+                                    remove(x.MainPanel);
+                                    add(tl.MainPanel);
+                                    validate();
+                                    pack();
+                                    setVisible(true);
                                     Tutor = true;
                                     JOptionPane.showMessageDialog(null,"Login Successful");
                                     break;
                                 } else {
                                     Student = true;
-                                    System.out.println("Stduent");
-                                    UserS = new Student("src/assets/data/"+Username+".txt");
+                                    UserS = new Student("src/assets/data/" + Username + ".txt");
                                     sl.Visible = true;
                                     x.Visible = false;
                                     remove(x.MainPanel);
@@ -172,15 +196,6 @@ public class MainWindow extends JFrame {
 
 
     public void Update() {
-        if (l.Visible) {
-        }
-        if (u.Visible) {
-        }
-        if (x.Visible) {
-        }
-        if (Student) {
-
-        }
         if(Studentactive){
             msg.Visible = true;
             sl.Visible = false;
