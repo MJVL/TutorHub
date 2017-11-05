@@ -26,6 +26,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="22"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-calculator-filled.png"/>
           <text value="Algebra I"/>
         </properties>
       </component>
@@ -35,6 +37,7 @@
         </constraints>
         <properties>
           <font name="Futura" size="22"/>
+          <icon value="assets/icons/icons8-geometry-filled.png"/>
           <text value="Geometry"/>
         </properties>
       </component>
@@ -44,6 +47,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="22"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-sine-filled.png"/>
           <text value="Algebra II"/>
         </properties>
       </component>
@@ -53,6 +58,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="22"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-tangent-filled.png"/>
           <text value="Calculus"/>
         </properties>
       </component>
@@ -62,6 +69,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="22"/>
+          <horizontalTextPosition value="11"/>
+          <icon value="assets/icons/icons8-pi-filled.png"/>
           <text value="Pre-Calculus"/>
         </properties>
       </component>
@@ -71,6 +80,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="22"/>
+          <horizontalTextPosition value="11"/>
+          <icon value="assets/icons/icons8-sigma.png"/>
           <text value="Statistics"/>
         </properties>
       </component>
@@ -80,6 +91,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="22"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-statistics-filled.png"/>
           <text value="AQR"/>
         </properties>
       </component>
@@ -89,6 +102,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="22"/>
+          <horizontalTextPosition value="11"/>
+          <icon value="assets/icons/icons8-math.png"/>
           <text value="Other"/>
         </properties>
       </component>
