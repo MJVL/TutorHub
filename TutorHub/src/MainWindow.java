@@ -51,6 +51,7 @@ public class MainWindow extends JFrame {
         timer.start();
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         pack();
+        setLocationRelativeTo(null);
         setVisible(true);
         u.btnSignup.addActionListener(new ActionListener() {
             @Override
