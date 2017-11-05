@@ -1,9 +1,9 @@
 import javax.swing.*;
 
 public class LogInWindow {
-    private JButton logInButton;
-    private JTextField textField1;
-    private JTextField textField2;
+    private JButton btnLogin;
+    private JTextField txtUsername;
+    private JTextField txtPassword;
     protected JPanel MainPanel;
     protected Boolean Visible;
 }
