@@ -25,6 +25,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-code-filled.png"/>
           <text value="Web Based"/>
         </properties>
       </component>
@@ -34,6 +36,8 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <horizontalTextPosition value="10"/>
+          <icon value="assets/icons/icons8-stack-overflow.png"/>
           <text value="Other"/>
         </properties>
       </component>
@@ -43,6 +47,7 @@
         </constraints>
         <properties>
           <font name="Futura" size="24"/>
+          <icon value="assets/icons/icons8-qr-code.png"/>
           <text value="C based"/>
         </properties>
       </component>
